@@ -29,10 +29,10 @@
 .single-roadmap.road-left::before {
   position: absolute;
   content: "";
-  height: 66.5%;
+  height: 67.5%;
   width: 1px;
   background: #004cff;
-  bottom: 10.5%;
+  bottom: 8.5%;
   left: 1%;
   z-index: -1;
 }
@@ -43,7 +43,7 @@
   height: 1px;
   width: 120%;
   background: #004cff;
-  top: 23%;
+  top: 24%;
   right: -21%;
   z-index: -1;
 }
@@ -59,7 +59,7 @@
 .single-roadmap.road-right::before {
   position: absolute;
   content: "";
-  height: 74.5%;
+  height: 75.5%;
   width: 1px;
   background: #004cff;
   bottom: 0;
@@ -71,7 +71,7 @@
   position: absolute;
   content: "";
   height: 1px;
-  width: 97.5%;
+  width: 97%;
   background: #004cff;
   bottom: 0;
   right: -10%;
