@@ -88,6 +88,46 @@
         border-bottom-left-radius: 50% 50%;
         }
     </style>
+    <style>
+        body {font-family: Arial;}
+        
+        /* Style the tab */
+        .tab {
+          overflow: hidden;
+          border: 1px solid #ccc;
+          background-color: #f1f1f1;
+        }
+        
+        /* Style the buttons inside the tab */
+        .tab button {
+          background-color: inherit;
+          float: left;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          padding: 14px 16px;
+          transition: 0.3s;
+          font-size: 17px;
+        }
+        
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+          background-color: #ddd;
+        }
+        
+        /* Create an active/current tablink class */
+        .tab button.active {
+          background-color: #ccc;
+        }
+        
+        /* Style the tab content */
+        .tabcontent {
+          display: none;
+          padding: 6px 12px;
+          border: 1px solid #ccc;
+          border-top: none;
+        }
+        </style>
 </head>
 
 <body>
@@ -140,103 +180,346 @@
         </div>
     </header>
     <!-- header-end -->
-<div class="service_area">
-    <div class="container">
-        <div class="row">
-            <h1 class="title">
-                Team Members
-                <br>
-             </h1>
-            <div class="col-sm-10 col-sm-offset-1">
-                <div class="col-md-4 col-sm-6">
-                    <div class="card-container">
-                        <div class="card">
-                            <div class="front">
-                                <div class="cover">
-                                    <img src="img/members/rotating_card_thumb3.png"/>
-                                </div>
-                                <div class="user">
-                                    <img class="img-circle" src="img/members/abhiram.jpeg"/>
-                                </div>
-                                <div class="content">
-                                    <div class="main">
-                                        <h3 class="name">Abhiram Kumar</h3>
-                                        <p class="profession">Forensics</p>
-                                        <p class="text-center">Third-Year</p>
+
+    <div class="tab">
+
+        <button class="tablinks" onclick="openCity(event, 'Team')">Current Team</button>
+        <button class="tablinks" onclick="openCity(event, 'Alum')">Alumini</button>
+      </div>
+      
+      <div id="Team" class="tabcontent">
+        <div class="service_area">
+            <div class="container">
+                <div class="row">
+                    <h1 class="title">
+                        Team Members
+                        <br>
+                     </h1>
+                    <div class="col-sm-10 col-sm-offset-1">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card-container">
+                                <div class="card">
+                                    <div class="front">
+                                        <div class="cover">
+                                            <img src="img/members/rotating_card_thumb3.png"/>
+                                        </div>
+                                        <div class="user">
+                                            <img class="img-circle" src="img/members/abhiram.jpeg"/>
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h3 class="name">Abhiram Kumar</h3>
+                                                <p class="profession">Forensics</p>
+                                                <p class="text-center">Third-Year</p>
+                                            </div>
+                                            <div class="footer">
+                                                <div class="rating">
+                                                    <i class="fa fa-mail-forward"></i>   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end front panel -->
+                                    <div class="back">
+                                        <div class="header">
+                                            <h5 class="motto">""</h5>
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h4 class="text-center">Member of team bi0s</h4>
+                                                <p class="text-center">Memory & Malware - The only M&M I like.</p>
+                
+                                            </div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="social-links text-center">
+                                                <a href="" class="wordpress"><i class="fa fa-github fa-fw"></i></a>
+                                                <a href="https://github.com/stuxnet999/" class="github"><i class="fa fa-google-plus fa-fw"></i></a>
+                                                <a href="https://twitter.com/_abhiramkumar" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end back panel -->
+                                </div> <!-- end card -->
+                            </div> <!-- end card-container -->
+                        </div> <!-- end col-sm-3 -->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card-container">
+                               <div class="card">
+                                   <div class="front">
+                                       <div class="cover">
+                                           <img src="img/members/rotating_card_thumb2.png"/>
+                                       </div>
+                                       <div class="user">
+                                           <img class="img-circle" src="img/members/vishnu.jpeg" style="height:100%;width: 100%;"/>
+                                       </div>
+                                       <div class="content">
+                                           <div class="main">
+                                               <h3 class="name">Vishnu Dev TJ </h3>
+                                               <p class="profession">Binary-Exploitation</p>
+                                               <p class="text-center">Third-Year</p>
+                                           </div>
+                                           <div class="footer">
+                                               <i class="fa fa-mail-forward"></i>   
+                                           </div>
+                                       </div>
+                                   </div> <!-- end front panel -->
+                                   <div class="back">
+                                       <div class="header">
+                                           <h5 class="motto">""</h5>
+                                       </div>
+                                       <div class="content">
+                                           <div class="main">
+                                               <h4 class="text-center">Member of team bi0s</h4>
+                                               <p class="text-center">
+                                                Emacs was my first love! And they say you can never forget your first love!
+                                                </p>
+                                           </div>
+                                       </div>
+                                       <div class="footer">
+                                           <div class="social-links text-center">
+                                               <a href="#" class="facebook"><i class="fa fa-github fa-fw"></i></a>
+                                               <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                               <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                           </div>
+                                       </div>
+                                   </div> <!-- end back panel -->
+                               </div> <!-- end card -->
+                           </div> <!-- end card-container -->
+                       </div> <!-- end col sm 3 -->
+                       <div class="col-md-4 col-sm-6">
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="front">
+                                    <div class="cover">
+                                        <img src="img/members/rotating_card_thumb3.png"/>
                                     </div>
-                                    <div class="footer">
-                                        <div class="rating">
-                                            <i class="fa fa-mail-forward"></i>   
+                                    <div class="user">
+                                        <img class="img-circle" src="img/members/ashwin.jpeg"/>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h3 class="name">S Ashwin Shenoi</h3>
+                                            <p class="profession">Web Exploitation</p>
+            
+                                            <p class="text-center">"Third-Year"</p>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="rating">
+                                                <i class="fa fa-mail-forward"></i>   
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div> <!-- end front panel -->
-                            <div class="back">
-                                <div class="header">
-                                    <h5 class="motto">""</h5>
-                                </div>
-                                <div class="content">
-                                    <div class="main">
-                                        <h4 class="text-center">Member of team bi0s</h4>
-                                        <p class="text-center">Memory & Malware - The only M&M I like.</p>
-        
+                                </div> <!-- end front panel -->
+                                <div class="back">
+                                    <div class="header">
+                                        <h5 class="motto">""</h5>
                                     </div>
-                                </div>
-                                <div class="footer">
-                                    <div class="social-links text-center">
-                                        <a href="https://stuxnet999.github.io/" class="wordpress"><i class="fa fa-github fa-fw"></i></a>
-                                        <a href="https://github.com/stuxnet999/" class="github"><i class="fa fa-google-plus fa-fw"></i></a>
-                                        <a href="https://twitter.com/_abhiramkumar" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h4 class="text-center">Member of team bi0s</h4>
+                                            <p class="text-center">Loves to take down any code you can host in a website.</p>
+            
+                                        </div>
                                     </div>
-                                </div>
-                            </div> <!-- end back panel -->
-                        </div> <!-- end card -->
-                    </div> <!-- end card-container -->
-                </div> <!-- end col-sm-3 -->
-                <div class="col-md-4 col-sm-6">
-                    <div class="card-container">
-                       <div class="card">
-                           <div class="front">
-                               <div class="cover">
-                                   <img src="img/members/rotating_card_thumb2.png"/>
-                               </div>
-                               <div class="user">
-                                   <img class="img-circle" src="img/members/vishnu.jpeg" style="height:100%;width: 100%;"/>
-                               </div>
-                               <div class="content">
-                                   <div class="main">
-                                       <h3 class="name">Vishnu Dev TJ </h3>
-                                       <p class="profession">Binary-Exploitation</p>
-                                       <p class="text-center">Third-Year</p>
-                                   </div>
-                                   <div class="footer">
-                                       <i class="fa fa-mail-forward"></i>   
-                                   </div>
-                               </div>
-                           </div> <!-- end front panel -->
-                           <div class="back">
-                               <div class="header">
-                                   <h5 class="motto">""</h5>
-                               </div>
-                               <div class="content">
-                                   <div class="main">
-                                       <h4 class="text-center">Member of team bi0s</h4>
-                                       <p class="text-center">
-                                        Emacs was my first love! And they say you can never forget your first love!
-                                        </p>
-                                   </div>
-                               </div>
-                               <div class="footer">
-                                   <div class="social-links text-center">
-                                       <a href="#" class="facebook"><i class="fa fa-github fa-fw"></i></a>
-                                       <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
-                                       <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
-                                   </div>
-                               </div>
-                           </div> <!-- end back panel -->
-                       </div> <!-- end card -->
-                   </div> <!-- end card-container -->
-               </div> <!-- end col sm 3 -->
+                                    <div class="footer">
+                                        <div class="social-links text-center">
+                                            <a href=" https://github.com/ashwinshenoi99" class="github"><i class="fa fa-github fa-fw"></i></a>
+                                            <a href="https://www.linkedin.com/in/ashwinshenoi" class="google"><i class="fa fa-linkedin fa-fw"></i></a>
+                                            <a href="https://twitter.com/__c3rb3ru5__" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                        </div>
+                                    </div>
+                                </div> <!-- end back panel -->
+                            </div> <!-- end card -->
+                        </div> <!-- end card-container -->
+                    </div> <!-- end col-sm-3 -->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="front">
+                                    <div class="cover">
+                                        <img src="img/members/rotating_card_thumb3.png"/>
+                                    </div>
+                                    <div class="user">
+                                        <img class="img-circle" src="img/members/sayoojS.jpg" style="height:100%;width: 100%;"/>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h3 class="name">Sayooj Samuel</h3>
+                                            <p class="profession">Cryptography</p>
+                
+                                            <p class="text-center">"Third-Year"</p>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="rating">
+                                                <i class="fa fa-mail-forward"></i>   
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end front panel -->
+                                <div class="back">
+                                    <div class="header">
+                                        <h5 class="motto">""</h5>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h4 class="text-center">Member of team bi0s</h4>
+                                            <p class="text-center">I love bruteforce!
+                                                <br>
+                                                I'm a detail-oriented Cryptanalyst, interested in LD cryptanalysis and xauthentication protocols. 
+                                                <a href='t.me/sayoojsamuel'>sayoojsamuel</a>
+                                                </p>
+                
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="social-links text-center">
+                                            <a href="#" class="facebook"><i class="fa fa-github fa-fw"></i></a>
+                                            <a href="#" class="google"><i class="fa fa-linkedin fa-fw"></i></a>
+                                            <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                        </div>
+                                    </div>
+                                </div> <!-- end back panel -->
+                            </div> <!-- end card -->
+                        </div> <!-- end card-container -->
+                    </div> <!-- end col-sm-3 -->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="front">
+                                    <div class="cover">
+                                        <img src="img/members/rotating_card_thumb3.png"/>
+                                    </div>
+                                    <div class="user">
+                                        <img class="img-circle" src="img/members/viveknj.png" style="height:100%;width: 100%;"/>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h3 class="name">Vivek N.J</h3>
+                                            <p class="profession">Cryptography</p>
+            
+                                            <p class="text-center">"Third-Year"</p>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="rating">
+                                                <i class="fa fa-mail-forward"></i>   
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end front panel -->
+                                <div class="back">
+                                    <div class="header">
+                                        <h5 class="motto">""</h5>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h4 class="text-center">Member of team bi0s</h4>
+                                            <p class="text-center"></p>
+            
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="social-links text-center">
+                                            <a href="#" class="facebook"><i class="fa fa-github fa-fw"></i></a>
+                                            <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                            <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                        </div>
+                                    </div>
+                                </div> <!-- end back panel -->
+                            </div> <!-- end card -->
+                        </div> <!-- end card-container -->
+                    </div> <!-- end col-sm-3 -->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="front">
+                                    <div class="cover">
+                                        <img src="img/members/rotating_card_thumb3.png"/>
+                                    </div>
+                                    <div class="user">
+                                        <img class="img-circle" src="img/members/rahul.jpg"/>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h3 class="name">Rahul sani</h3>
+                                            <p class="profession">Android security</p>
+                                            <p class="text-center">"Third-Year"</p>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="rating">
+                                                <i class="fa fa-mail-forward"></i>   
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end front panel -->
+                                <div class="back">
+                                    <div class="header">
+                                        <h5 class="motto">""</h5>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h4 class="text-center">Member of team bi0s</h4>
+                                            <p class="text-center"></p>
+            
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="social-links text-center">
+                                            <a href="#" class="facebook"><i class="fa fa-github fa-fw"></i></a>
+                                            <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                            <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                        </div>
+                                    </div>
+                                </div> <!-- end back panel -->
+                            </div> <!-- end card -->
+                        </div> <!-- end card-container -->
+                    </div> <!-- end col-sm-3 -->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="front">
+                                    <div class="cover">
+                                        <img src="img/members/rotating_card_thumb3.png"/>
+                                    </div>
+                                    <div class="user">
+                                        <img class="img-circle" src="img/members/akul.jpg"/>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h3 class="name">Akul Pillai</h3>
+                                            <p class="profession">Reverse Engineering</p>
+            
+                                            <p class="text-center">"Third-Year"</p>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="rating">
+                                                <i class="fa fa-mail-forward"></i>   
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end front panel -->
+                                <div class="back">
+                                    <div class="header">
+                                        <h5 class="motto">""</h5>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h4 class="text-center"> Description</h4>
+                                            <p class="text-center">from ELFs to Gameboy ROMs!
+                                                <a href="https://www.akulpillai.com">kulpillai.com</a> </p>
+            
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="social-links text-center">
+                                            <a href="#" class="facebook"><i class="fa fa-github fa-fw"></i></a>
+                                            <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                            <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                        </div>
+                                    </div>
+                                </div> <!-- end back panel -->
+                            </div> <!-- end card -->
+                        </div> <!-- end card-container -->
+                    </div> <!-- end col-sm-3 -->
+               <!--         <div class="col-sm-1"></div> -->
                <div class="col-md-4 col-sm-6">
                 <div class="card-container">
                     <div class="card">
@@ -245,13 +528,12 @@
                                 <img src="img/members/rotating_card_thumb3.png"/>
                             </div>
                             <div class="user">
-                                <img class="img-circle" src="img/members/ashwin.jpeg"/>
+                                <img class="img-circle" src="img/members/season.jpeg"/>
                             </div>
                             <div class="content">
                                 <div class="main">
-                                    <h3 class="name">S Ashwin Shenoi</h3>
-                                    <p class="profession">Web Exploitation</p>
-    
+                                    <h3 class="name">Season Cheriyan</h3>
+                                    <p class="profession">Scada</p>
                                     <p class="text-center">"Third-Year"</p>
                                 </div>
                                 <div class="footer">
@@ -268,22 +550,22 @@
                             <div class="content">
                                 <div class="main">
                                     <h4 class="text-center">Member of team bi0s</h4>
-                                    <p class="text-center">Loves to take down any code you can host in a website.</p>
-    
+                                    <p class="text-center"></p>
+        
                                 </div>
                             </div>
                             <div class="footer">
                                 <div class="social-links text-center">
-                                    <a href=" https://github.com/ashwinshenoi99" class="github"><i class="fa fa-github fa-fw"></i></a>
-                                    <a href="https://www.linkedin.com/in/ashwinshenoi" class="google"><i class="fa fa-linkedin fa-fw"></i></a>
-                                    <a href="https://twitter.com/__c3rb3ru5__" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                    <a href="https://github.com/s34s0n" class="facebook"><i class="fa fa-github fa-fw"></i></a>
+                                    <a href="https://www.linkedin.com/in/s34s0n/ " class="google"><i class="fa fa-linkedin fa-fw"></i></a>
+                                    <a href=" https://twitter.com/_s34s0n_" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
                                 </div>
                             </div>
                         </div> <!-- end back panel -->
                     </div> <!-- end card -->
                 </div> <!-- end card-container -->
             </div> <!-- end col-sm-3 -->
-            <div class="col-md-4 col-sm-6">
+               <div class="col-md-4 col-sm-6">
                 <div class="card-container">
                     <div class="card">
                         <div class="front">
@@ -291,12 +573,12 @@
                                 <img src="img/members/rotating_card_thumb3.png"/>
                             </div>
                             <div class="user">
-                                <img class="img-circle" src="img/members/sayoojS.jpg" style="height:100%;width: 100%;"/>
+                                <img class="img-circle" src="img/members/kartheek.jpg" style="height:100%;width: 100%;"/>
                             </div>
                             <div class="content">
                                 <div class="main">
-                                    <h3 class="name">Sayooj Samuel</h3>
-                                    <p class="profession">Cryptography</p>
+                                    <h3 class="name">Kartheek Lade</h3>
+                                    <p class="profession">Product Manager</p>
         
                                     <p class="text-center">"Third-Year"</p>
                                 </div>
@@ -314,63 +596,13 @@
                             <div class="content">
                                 <div class="main">
                                     <h4 class="text-center">Member of team bi0s</h4>
-                                    <p class="text-center">I love bruteforce!
-                                        <br>
-                                        I'm a detail-oriented Cryptanalyst, interested in LD cryptanalysis and xauthentication protocols. 
-                                        <a href='t.me/sayoojsamuel'>sayoojsamuel</a>
-                                        </p>
+                                    <p class="text-center"></p>
         
                                 </div>
                             </div>
                             <div class="footer">
                                 <div class="social-links text-center">
                                     <a href="#" class="facebook"><i class="fa fa-github fa-fw"></i></a>
-                                    <a href="#" class="google"><i class="fa fa-linkedin fa-fw"></i></a>
-                                    <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
-                                </div>
-                            </div>
-                        </div> <!-- end back panel -->
-                    </div> <!-- end card -->
-                </div> <!-- end card-container -->
-            </div> <!-- end col-sm-3 -->
-            <div class="col-md-4 col-sm-6">
-                <div class="card-container">
-                    <div class="card">
-                        <div class="front">
-                            <div class="cover">
-                                <img src="img/members/rotating_card_thumb3.png"/>
-                            </div>
-                            <div class="user">
-                                <img class="img-circle" src="img/members/viveknj.png" style="height:100%;width: 100%;"/>
-                            </div>
-                            <div class="content">
-                                <div class="main">
-                                    <h3 class="name">Vivek N.J</h3>
-                                    <p class="profession">Cryptography</p>
-    
-                                    <p class="text-center">"Third-Year"</p>
-                                </div>
-                                <div class="footer">
-                                    <div class="rating">
-                                        <i class="fa fa-mail-forward"></i>   
-                                    </div>
-                                </div>
-                            </div>
-                        </div> <!-- end front panel -->
-                        <div class="back">
-                            <div class="header">
-                                <h5 class="motto">""</h5>
-                            </div>
-                            <div class="content">
-                                <div class="main">
-                                    <h4 class="text-center">Member of team bi0s</h4>
-                                    <p class="text-center"></p>
-    
-                                </div>
-                            </div>
-                            <div class="footer">
-                                <div class="social-links text-center">
-                                    <a href="#" class="facebook"><i class="fa fa-github fa-fw"></i></a>
                                     <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
                                     <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
                                 </div>
@@ -381,1173 +613,1552 @@
             </div> <!-- end col-sm-3 -->
             <div class="col-md-4 col-sm-6">
                 <div class="card-container">
-                    <div class="card">
-                        <div class="front">
-                            <div class="cover">
-                                <img src="img/members/rotating_card_thumb3.png"/>
-                            </div>
-                            <div class="user">
-                                <img class="img-circle" src="img/members/rahul.jpg"/>
-                            </div>
-                            <div class="content">
-                                <div class="main">
-                                    <h3 class="name">Rahul sani</h3>
-                                    <p class="profession">Android security</p>
-                                    <p class="text-center">"Third-Year"</p>
-                                </div>
-                                <div class="footer">
-                                    <div class="rating">
-                                        <i class="fa fa-mail-forward"></i>   
-                                    </div>
-                                </div>
-                            </div>
-                        </div> <!-- end front panel -->
-                        <div class="back">
-                            <div class="header">
-                                <h5 class="motto">""</h5>
-                            </div>
-                            <div class="content">
-                                <div class="main">
-                                    <h4 class="text-center">Member of team bi0s</h4>
-                                    <p class="text-center"></p>
-    
-                                </div>
+                   <div class="card">
+                       <div class="front">
+                           <div class="cover">
+                               <img src="img/members/rotating_card_thumb2.png"/>
+                           </div>
+                           <div class="user">
+                               <img class="img-circle" src="img/members/ayushi.jpg" style="height:100%;width: 100%;"/>
+                           </div>
+                           <div class="content">
+                               <div class="main">
+                                   <h3 class="name">Ayushi Sharma </h3>
+                                   <p class="profession">Reverse engineering</p>
+                                   <p class="text-center">Third-Year</p>
+                               </div>
+                               <div class="footer">
+                                   <i class="fa fa-mail-forward"></i>   
+                               </div>
+                           </div>
+                       </div> <!-- end front panel -->
+                       <div class="back">
+                           <div class="header">
+                               <h5 class="motto">""</h5>
+                           </div>
+                           <div class="content">
+                               <div class="main">
+                                   <h4 class="text-center">Description</h4>
+                                   <p class="text-center">"Third-Year"</p>
+                               </div>
+                           </div>
+                           <div class="footer">
+                               <div class="social-links text-center">
+                                   <a href="#" class="facebook"><i class="fa fa-github fa-fw"></i></a>
+                                   <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                   <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                               </div>
+                           </div>
+                       </div> <!-- end back panel -->
+                   </div> <!-- end card -->
+               </div> <!-- end card-container -->
+           </div> <!-- end col sm 3 -->
+           <div class="col-md-4 col-sm-6">
+            <div class="card-container">
+                <div class="card">
+                    <div class="front">
+                        <div class="cover">
+                            <img src="img/members/rotating_card_thumb3.png"/>
+                        </div>
+                        <div class="user">
+                            <img class="img-circle" src="img/members/nimisha.png" style="height:100%;width: 100%;"/>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h3 class="name">Nimisha Dugyala</h3>
+                                <p class="profession">Web Exploitation</p>
+                                <p class="text-center">"Third-Year"</p>
                             </div>
                             <div class="footer">
-                                <div class="social-links text-center">
-                                    <a href="#" class="facebook"><i class="fa fa-github fa-fw"></i></a>
-                                    <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
-                                    <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
-                                </div>
-                            </div>
-                        </div> <!-- end back panel -->
-                    </div> <!-- end card -->
-                </div> <!-- end card-container -->
-            </div> <!-- end col-sm-3 -->
-            <div class="col-md-4 col-sm-6">
-                <div class="card-container">
-                    <div class="card">
-                        <div class="front">
-                            <div class="cover">
-                                <img src="img/members/rotating_card_thumb3.png"/>
-                            </div>
-                            <div class="user">
-                                <img class="img-circle" src="img/members/akul.jpg"/>
-                            </div>
-                            <div class="content">
-                                <div class="main">
-                                    <h3 class="name">Akul Pillai</h3>
-                                    <p class="profession">Reverse Engineering</p>
-    
-                                    <p class="text-center">"Third-Year"</p>
-                                </div>
-                                <div class="footer">
-                                    <div class="rating">
-                                        <i class="fa fa-mail-forward"></i>   
-                                    </div>
-                                </div>
-                            </div>
-                        </div> <!-- end front panel -->
-                        <div class="back">
-                            <div class="header">
-                                <h5 class="motto">""</h5>
-                            </div>
-                            <div class="content">
-                                <div class="main">
-                                    <h4 class="text-center"> Description</h4>
-                                    <p class="text-center">from ELFs to Gameboy ROMs!
-                                        <a href="https://www.akulpillai.com">kulpillai.com</a> </p>
-    
-                                </div>
-                            </div>
-                            <div class="footer">
-                                <div class="social-links text-center">
-                                    <a href="#" class="facebook"><i class="fa fa-github fa-fw"></i></a>
-                                    <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
-                                    <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
-                                </div>
-                            </div>
-                        </div> <!-- end back panel -->
-                    </div> <!-- end card -->
-                </div> <!-- end card-container -->
-            </div> <!-- end col-sm-3 -->
-       <!--         <div class="col-sm-1"></div> -->
-       <div class="col-md-4 col-sm-6">
-        <div class="card-container">
-            <div class="card">
-                <div class="front">
-                    <div class="cover">
-                        <img src="img/members/rotating_card_thumb3.png"/>
-                    </div>
-                    <div class="user">
-                        <img class="img-circle" src="img/members/season.jpeg"/>
-                    </div>
-                    <div class="content">
-                        <div class="main">
-                            <h3 class="name">Season Cheriyan</h3>
-                            <p class="profession">Scada</p>
-                            <p class="text-center">"Third-Year"</p>
-                        </div>
-                        <div class="footer">
-                            <div class="rating">
-                                <i class="fa fa-mail-forward"></i>   
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- end front panel -->
-                <div class="back">
-                    <div class="header">
-                        <h5 class="motto">""</h5>
-                    </div>
-                    <div class="content">
-                        <div class="main">
-                            <h4 class="text-center">Member of team bi0s</h4>
-                            <p class="text-center"></p>
-
-                        </div>
-                    </div>
-                    <div class="footer">
-                        <div class="social-links text-center">
-                            <a href="https://github.com/s34s0n" class="facebook"><i class="fa fa-github fa-fw"></i></a>
-                            <a href="https://www.linkedin.com/in/s34s0n/ " class="google"><i class="fa fa-linkedin fa-fw"></i></a>
-                            <a href=" https://twitter.com/_s34s0n_" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
-                        </div>
-                    </div>
-                </div> <!-- end back panel -->
-            </div> <!-- end card -->
-        </div> <!-- end card-container -->
-    </div> <!-- end col-sm-3 -->
-       <div class="col-md-4 col-sm-6">
-        <div class="card-container">
-            <div class="card">
-                <div class="front">
-                    <div class="cover">
-                        <img src="img/members/rotating_card_thumb3.png"/>
-                    </div>
-                    <div class="user">
-                        <img class="img-circle" src="img/members/kartheek.jpg" style="height:100%;width: 100%;"/>
-                    </div>
-                    <div class="content">
-                        <div class="main">
-                            <h3 class="name">Kartheek Lade</h3>
-                            <p class="profession">Product Manager</p>
-
-                            <p class="text-center">"Third-Year"</p>
-                        </div>
-                        <div class="footer">
-                            <div class="rating">
-                                <i class="fa fa-mail-forward"></i>   
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- end front panel -->
-                <div class="back">
-                    <div class="header">
-                        <h5 class="motto">""</h5>
-                    </div>
-                    <div class="content">
-                        <div class="main">
-                            <h4 class="text-center">Member of team bi0s</h4>
-                            <p class="text-center"></p>
-
-                        </div>
-                    </div>
-                    <div class="footer">
-                        <div class="social-links text-center">
-                            <a href="#" class="facebook"><i class="fa fa-github fa-fw"></i></a>
-                            <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
-                            <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
-                        </div>
-                    </div>
-                </div> <!-- end back panel -->
-            </div> <!-- end card -->
-        </div> <!-- end card-container -->
-    </div> <!-- end col-sm-3 -->
-    <div class="col-md-4 col-sm-6">
-        <div class="card-container">
-           <div class="card">
-               <div class="front">
-                   <div class="cover">
-                       <img src="img/members/rotating_card_thumb2.png"/>
-                   </div>
-                   <div class="user">
-                       <img class="img-circle" src="img/members/ayushi.jpg" style="height:100%;width: 100%;"/>
-                   </div>
-                   <div class="content">
-                       <div class="main">
-                           <h3 class="name">Ayushi Sharma </h3>
-                           <p class="profession">Reverse engineering</p>
-                           <p class="text-center">Third-Year</p>
-                       </div>
-                       <div class="footer">
-                           <i class="fa fa-mail-forward"></i>   
-                       </div>
-                   </div>
-               </div> <!-- end front panel -->
-               <div class="back">
-                   <div class="header">
-                       <h5 class="motto">""</h5>
-                   </div>
-                   <div class="content">
-                       <div class="main">
-                           <h4 class="text-center">Description</h4>
-                           <p class="text-center">"Third-Year"</p>
-                       </div>
-                   </div>
-                   <div class="footer">
-                       <div class="social-links text-center">
-                           <a href="#" class="facebook"><i class="fa fa-github fa-fw"></i></a>
-                           <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
-                           <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
-                       </div>
-                   </div>
-               </div> <!-- end back panel -->
-           </div> <!-- end card -->
-       </div> <!-- end card-container -->
-   </div> <!-- end col sm 3 -->
-   <div class="col-md-4 col-sm-6">
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <div class="cover">
-                    <img src="img/members/rotating_card_thumb3.png"/>
-                </div>
-                <div class="user">
-                    <img class="img-circle" src="img/members/nimisha.png" style="height:100%;width: 100%;"/>
-                </div>
-                <div class="content">
-                    <div class="main">
-                        <h3 class="name">Nimisha Dugyala</h3>
-                        <p class="profession">Web Exploitation</p>
-                        <p class="text-center">"Third-Year"</p>
-                    </div>
-                    <div class="footer">
-                        <div class="rating">
-                            <i class="fa fa-mail-forward"></i>   
-                        </div>
-                    </div>
-                </div>
-            </div> <!-- end front panel -->
-            <div class="back">
-                <div class="header">
-                    <h5 class="motto">""</h5>
-                </div>
-                <div class="content">
-                    <div class="main">
-                        <h4 class="text-center">Member of team bi0s</h4>
-                        <p class="text-center"></p>
-
-                    </div>
-                </div>
-                <div class="footer">
-                    <div class="social-links text-center">
-                        <a href="#" class="facebook"><i class="fa fa-github fa-fw"></i></a>
-                        <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
-                        <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
-                    </div>
-                </div>
-            </div> <!-- end back panel -->
-        </div> <!-- end card -->
-    </div> <!-- end card-container -->
-</div> <!-- end col-sm-3 -->
-<div class="col-md-4 col-sm-6">
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <div class="cover">
-                    <img src="img/members/rotating_card_thumb3.png"/>
-                </div>
-                <div class="user">
-                    <img class="img-circle" src="img/members/ashwathi.jpg" style="height:100%;width: 100%;"/>
-                </div>
-                <div class="content">
-                    <div class="main">
-                        <h3 class="name">Ashwathi Sasi</h3>
-                        <p class="profession">Reverse Engineering</p>
-                        <p class="text-center">"Third-Year"</p>
-                    </div>
-                    <div class="footer">
-                        <div class="rating">
-                            <i class="fa fa-mail-forward"></i>   
-                        </div>
-                    </div>
-                </div>
-            </div> <!-- end front panel -->
-            <div class="back">
-                <div class="header">
-                    <h5 class="motto">""</h5>
-                </div>
-                <div class="content">
-                    <div class="main">
-                        <h4 class="text-center">Member of team bi0s</h4>
-                        <p class="text-center">An avid learner and reverse engineer.
-                            ashwathisasi.wordpress.com
-                            </p>
-
-                    </div>
-                </div>
-                <div class="footer">
-                    <div class="social-links text-center">
-                        <a href="#" class="facebook"><i class="fa fa-github fa-fw"></i></a>
-                        <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
-                        <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
-                    </div>
-                </div>
-            </div> <!-- end back panel -->
-        </div> <!-- end card -->
-    </div> <!-- end card-container -->
-</div> <!-- end col-sm-3 -->
-   <div class="col-md-4 col-sm-6">
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <div class="cover">
-                    <img src="img/members/rotating_card_thumb3.png"/>
-                </div>
-                <div class="user">
-                    <img class="img-circle" src="img/members/geethnajpg"/>
-                </div>
-                <div class="content">
-                    <div class="main">
-                        <h3 class="name">Geethna TK</h3>
-                        <p class="profession">Reverse Engineering</p>
-                        <p class="text-center">"Third-Year"</p>
-                    </div>
-                    <div class="footer">
-                        <div class="rating">
-                            <i class="fa fa-mail-forward"></i>   
-                        </div>
-                    </div>
-                </div>
-            </div> <!-- end front panel -->
-            <div class="back">
-                <div class="header">
-                    <h5 class="motto">""</h5>
-                </div>
-                <div class="content">
-                    <div class="main">
-                        <h4 class="text-center">Member of team bi0s</h4>
-                        <p class="text-center"></p>
-
-                    </div>
-                </div>
-                <div class="footer">
-                    <div class="social-links text-center">
-                        <a href="#" class="facebook"><i class="fa fa-github fa-fw"></i></a>
-                        <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
-                        <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
-                    </div>
-                </div>
-            </div> <!-- end back panel -->
-        </div> <!-- end card -->
-    </div> <!-- end card-container -->
-</div> <!-- end col-sm-3 -->
-<div class="col-md-4 col-sm-6">
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <div class="cover">
-                    <img src="img/members/rotating_card_thumb3.png"/>
-                </div>
-                <div class="user">
-                    <img class="img-circle" src="img/members/soumya.jpg"/>
-                </div>
-                <div class="content">
-                    <div class="main">
-                        <h3 class="name">Sowmya Potluri</h3>
-                        <p class="profession">Cryptography</p>
-                        <p class="text-center">"Third-Year"</p>
-                    </div>
-                    <div class="footer">
-                        <div class="rating">
-                            <i class="fa fa-mail-forward"></i>   
-                        </div>
-                    </div>
-                </div>
-            </div> <!-- end front panel -->
-            <div class="back">
-                <div class="header">
-                    <h5 class="motto">""</h5>
-                </div>
-                <div class="content">
-                    <div class="main">
-                        <h4 class="text-center">Member of team bi0s</h4>
-                        <p class="text-center"></p>
-
-                    </div>
-                </div>
-                <div class="footer">
-                    <div class="social-links text-center">
-                        <a href="#" class="facebook"><i class="fa fa-github fa-fw"></i></a>
-                        <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
-                        <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
-                    </div>
-                </div>
-            </div> <!-- end back panel -->
-        </div> <!-- end card -->
-    </div> <!-- end card-container -->
-</div> <!-- end col-sm-3 -->
-   <div class="col-md-4 col-sm-6">
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <div class="cover">
-                    <img src="img/members/rotating_card_thumb3.png"/>
-                </div>
-                <div class="user">
-                    <img class="img-circle" src="img/members/athira.png" style="height:100%;width: 100%;"/>
-                </div>
-                <div class="content">
-                    <div class="main">
-                        <h3 class="name">Aathira Dineshan</h3>
-                        <p class="profession">Hardware</p>
-
-                        <p class="text-center">"Third year"</p>
-                    </div>
-                    <div class="footer">
-                        <div class="rating">
-                            <i class="fa fa-mail-forward"></i>   
-                        </div>
-                    </div>
-                </div>
-            </div> <!-- end front panel -->
-            <div class="back">
-                <div class="header">
-                    <h5 class="motto">""</h5>
-                </div>
-                <div class="content">
-                    <div class="main">
-                        <h4 class="text-center">Description</h4>
-                        <p class="text-center">Junior researcher in IoT security and CAN, with ML and Android along the way</p>
-
-                    </div>
-                </div>
-                <div class="footer">
-                    <div class="social-links text-center">
-                        <a href="https://github.com/Athi101" class="facebook"><i class="fa fa-github fa-fw"></i></a>
-                        <a href="https://www.linkedin.com/in/aathira-dineshan-855816193" class="google"><i class="fa fa-linkedin fa-fw"></i></a>
-                        <a href="https://twitter.com/Aathi_Dsh" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
-                    </div>
-                </div>
-            </div> <!-- end back panel -->
-        </div> <!-- end card -->
-    </div> <!-- end card-container -->
-</div> <!-- end col-sm-3 -->
-<div class="col-md-4 col-sm-6">
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <div class="cover">
-                    <img src="img/members/rotating_card_thumb3.png"/>
-                </div>
-                <div class="user">
-                    <img class="img-circle" src="img/members/sruthi.jpg"/>
-                </div>
-                <div class="content">
-                    <div class="main">
-                        <h3 class="name">Shruti Dixit </h3>
-                        <p class="profession">Reverse Engineering</p>
-
-                        <p class="text-center">"Third-Year"</p>
-                    </div>
-                    <div class="footer">
-                        <div class="rating">
-                            <i class="fa fa-mail-forward"></i>   
-                        </div>
-                    </div>
-                </div>
-            </div> <!-- end front panel -->
-            <div class="back">
-                <div class="header">
-                    <h5 class="motto">""</h5>
-                </div>
-                <div class="content">
-                    <div class="main">
-                        <h4 class="text-center">Member of team bi0s</h4>
-                        <p class="text-center">
-                            Stripping the binaries apart and reading between the lines. 
-                            </p>
-
-                    </div>
-                </div>
-                <div class="footer">
-                    <div class="social-links text-center">
-                        <a href="#" class="facebook"><i class="fa fa-github fa-fw"></i></a>
-                        <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
-                        <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
-                    </div>
-                </div>
-            </div> <!-- end back panel -->
-        </div> <!-- end card -->
-    </div> <!-- end card-container -->
-</div> <!-- end col-sm-3 -->
-<div class="col-md-4 col-sm-6">
-    <div class="card-container">
-        <div class="card">
-            <div class="front">
-                <div class="cover">
-                    <img src="img/members/rotating_card_thumb3.png"/>
-                </div>
-                <div class="user">
-                    <img class="img-circle" src="img/members/ritvik.jpg" style="height:100%;width: 100%;"/>
-                </div>
-                <div class="content">
-                    <div class="main">
-                        <h3 class="name">Sai Ritvik T</h3>
-                        <p class="profession">Binary Exploitation</p>
-                        <p class="text-center">"Second-Year"</p>
-                    </div>
-                    <div class="footer">
-                        <div class="rating">
-                            <i class="fa fa-mail-forward"></i>   
-                        </div>
-                    </div>
-                </div>
-            </div> <!-- end front panel -->
-            <div class="back">
-                <div class="header">
-                    <h5 class="motto">""</h5>
-                </div>
-                <div class="content">
-                    <div class="main">
-                        <h4 class="text-center">Member of team bi0s</h4>
-                        <p class="text-center"></p>
-
-                    </div>
-                </div>
-                <div class="footer">
-                    <div class="social-links text-center">
-                        <a href="#" class="facebook"><i class="fa fa-github fa-fw"></i></a>
-                        <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
-                        <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
-                    </div>
-                </div>
-            </div> <!-- end back panel -->
-        </div> <!-- end card -->
-    </div> <!-- end card-container -->
-</div> <!-- end col-sm-3 -->
-    <!--         <div class="col-sm-1"></div> -->
-    <!--         <div class="col-sm-1"></div> -->
-            <div class="col-md-4 col-sm-6">
-                <div class="card-container">
-                    <div class="card">
-                        <div class="front">
-                            <div class="cover">
-                                <img src="img/members/rotating_card_thumb3.png"/>
-                            </div>
-                            <div class="user">
-                                <img class="img-circle" src="img/members/nihit.jpeg" style="height:100%;width: 100%;"/>
-                            </div>
-                            <div class="content">
-                                <div class="main">
-                                    <h3 class="name">Nihith</h3>
-                                    <p class="profession">Forensics</p>
-    
-                                    <p class="text-center">"Second-Year"</p>
-                                </div>
-                                <div class="footer">
-                                    <div class="rating">
-                                        <i class="fa fa-mail-forward"></i>   
-                                    </div>
-                                </div>
-                            </div>
-                        </div> <!-- end front panel -->
-                        <div class="back">
-                            <div class="header">
-                                <h5 class="motto">""</h5>
-                            </div>
-                            <div class="content">
-                                <div class="main">
-                                    <h4 class="text-center">Member of team bi0s</h4>
-                                    <p class="text-center">Digital Forensics Analyst
-                                       <a href="http://www.bolisettynihith.wordpress.com">bolisettynihith.wordpress.com</a>
-                                        </p>
-    
-                                </div>
-                            </div>
-                            <div class="footer">
-                                <div class="social-links text-center">
-                                    <a href="https://github.com/bolisettynihith" class="github"><i class="fa fa-github fa-fw"></i></a>
-                                    <a href="https://bolisettynihith.github.io/" class="wordpress"><i class="fa fa-github fa-fw"></i></a>
-                                    <a href=" https://twitter.com/NihithNihi" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
-                                </div>
-                            </div>
-                        </div> <!-- end back panel -->
-                    </div> <!-- end card -->
-                </div> <!-- end card-container -->
-            </div> <!-- end col-sm-3 -->
-            
-            <div class="col-md-4 col-sm-6">
-                <div class="card-container">
-                    <div class="card">
-                        <div class="front">
-                            <div class="cover">
-                                <img src="img/members/rotating_card_thumb3.png"/>
-                            </div>
-                            <div class="user">
-                                <img class="img-circle" src="img/members/sandra.jpeg"/>
-                            </div>
-                            <div class="content">
-                                <div class="main">
-                                    <h3 class="name">Sandhra </h3>
-                                    <p class="profession">Reverse Engineering</p>
-    
-                                    <p class="text-center">"Second-Year"</p>
-                                </div>
-                                <div class="footer">
-                                    <div class="rating">
-                                        <i class="fa fa-mail-forward"></i>   
-                                    </div>
-                                </div>
-                            </div>
-                        </div> <!-- end front panel -->
-                        <div class="back">
-                            <div class="header">
-                                <h5 class="motto">""</h5>
-                            </div>
-                            <div class="content">
-                                <div class="main">
-                                    <h4 class="text-center">Member of team bi0s</h4>
-                                    <p class="text-center"></p>
-    
-                                </div>
-                            </div>
-                            <div class="footer">
-                                <div class="social-links text-center">
-                                    <a href="#" class="facebook"><i class="fa fa-github fa-fw"></i></a>
-                                    <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
-                                    <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
-                                </div>
-                            </div>
-                        </div> <!-- end back panel -->
-                    </div> <!-- end card -->
-                </div> <!-- end card-container -->
-            </div> <!-- end col-sm-3 -->
-    <!--         <div class="col-sm-1"></div> -->
-                 <div class="col-md-4 col-sm-6">
-                 <div class="card-container">
-                    <div class="card">
-                        <div class="front">
-                            <div class="cover">
-                                <img src="img/members/rotating_card_thumb2.png"/>
-                            </div>
-                            <div class="user">
-                                <img class="img-circle" src="img/members/nikhil1.png" style="height:100%;width: 100%;"/>
-                            </div>
-                            <div class="content">
-                                <div class="main">
-                                    <h3 class="name">Nikhil Nair </h3>
-                                    <p class="profession">WEB EXPLOITATION</p>
-                                    <p class="text-center">Second-Year</p>
-                                </div>
-                                <div class="footer">
+                                <div class="rating">
                                     <i class="fa fa-mail-forward"></i>   
                                 </div>
                             </div>
-                        </div> <!-- end front panel -->
-                        <div class="back">
-                            <div class="header">
-                                <h5 class="motto">""</h5>
+                        </div>
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                        <div class="header">
+                            <h5 class="motto">""</h5>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h4 class="text-center">Member of team bi0s</h4>
+                                <p class="text-center"></p>
+        
                             </div>
-                            <div class="content">
-                                <div class="main">
-                                    <h4 class="text-center">Member of team bi0s</h4>
-                                    <p class="text-center">If no one came from the future to stop you how bad could your decissions be.</p>
-                                </div>
-                            </div>
-                            <div class="footer">
-                                <div class="social-links text-center">
-                                    <a href="https://github.com/Captain-K-101" class="facebook"><i class="fa fa-github fa-fw"></i></a>
-                                    <a href="https://playingwithhacks.github.io" class="google"><i class="fa fa-wordpress fa-fw"></i></a>
-                                    <a href="https://twitter.com/captainkay11" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
-                                </div>
-                            </div>
-                        </div> <!-- end back panel -->
-                    </div> <!-- end card -->
-                </div> <!-- end card-container -->
-            </div> <!-- end col sm 3 -->
-            <div class="col-md-4 col-sm-6">
-                <div class="card-container">
-                    <div class="card">
-                        <div class="front">
-                            <div class="cover">
-                                <img src="img/members/rotating_card_thumb3.png"/>
-                            </div>
-                            <div class="user">
-                                <img class="img-circle" src="img/members/sourag.jpeg"/>
-                            </div>
-                            <div class="content">
-                                <div class="main">
-                                    <h3 class="name">Sourag C </h3>
-                                    <p class="profession">Binary-Exploitation</p>
-    
-                                    <p class="text-center">"Second-Year"</p>
-                                </div>
-                                <div class="footer">
-                                    <div class="rating">
-                                        <i class="fa fa-mail-forward"></i>   
-                                    </div>
-                                </div>
-                            </div>
-                        </div> <!-- end front panel -->
-                        <div class="back">
-                            <div class="header">
-                                <h5 class="motto">""</h5>
-                            </div>
-                            <div class="content">
-                                <div class="main">
-                                    <h4 class="text-center">Member of team bi0s</h4>
-                                    <p class="text-center">
-                                        Anything related to Science and technology interests me.
-                                        </p>
-    
-                                </div>
-                            </div>
-                            <div class="footer">
-                                <div class="social-links text-center">
-                                    <a href="https://github.com/souragc" class="github"><i class="fa fa-github fa-fw"></i></a>
-                                    <a href="https://www.linkedin.com/in/sourag-c-05bb3a197/" class="linkedin"><i class="fa fa-linkedin fa-fw"></i></a>
-                                    <a href=" https://twitter/com/3agl31" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
-                                </div>
-                            </div>
-                        </div> <!-- end back panel -->
-                    </div> <!-- end card -->
-                </div> <!-- end card-container -->
-            </div> <!-- end col-sm-3 -->
-            
-
-            
-
-            
-            <div class="col-md-4 col-sm-6">
-                <div class="card-container">
-                    <div class="card">
-                        <div class="front">
-                            <div class="cover">
-                                <img src="img/members/rotating_card_thumb3.png"/>
-                            </div>
-                            <div class="user">
-                                <img class="img-circle" src="img/members/meenakshi.png" style="height:100%;width: 100%;"/>
-                            </div>
-                            <div class="content">
-                                <div class="main">
-                                    <h3 class="name">Meenakshi SL</h3>
-                                    <p class="profession">Cryptography</p>
-    
-                                    <p class="text-center">"Second-Year"</p>
-                                </div>
-                                <div class="footer">
-                                    <div class="rating">
-                                        <i class="fa fa-mail-forward"></i>   
-                                    </div>
-                                </div>
-                            </div>
-                        </div> <!-- end front panel -->
-                        <div class="back">
-                            <div class="header">
-                                <h5 class="motto">""</h5>
-                            </div>
-                            <div class="content">
-                                <div class="main">
-                                    <h4 class="text-center">Member of team bi0s</h4>
-                                    <p class="text-center">I like my cryptosystems the way I like my coffee - real and strong. </p>
-    
-                                </div>
-                            </div>
-                            <div class="footer">
-                                <div class="social-links text-center">
-                                    <a href="#" class="facebook"><i class="fa fa-github fa-fw"></i></a>
-                                    <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
-                                    <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
-                                </div>
-                            </div>
-                        </div> <!-- end back panel -->
-                    </div> <!-- end card -->
-                </div> <!-- end card-container -->
-            </div> <!-- end col-sm-3 -->
-               <div class="col-md-4 col-sm-6">
-        <div class="card-container">
-            <div class="card">
-                <div class="front">
-                    <div class="cover">
-                        <img src="img/members/rotating_card_thumb3.png"/>
-                    </div>
-                    <div class="user">
-                        <img class="img-circle" src="img/members/Gopika.jpg"/>
-                    </div>
-                    <div class="content">
-                        <div class="main">
-                            <h3 class="name">Gopika Subramanian</h3>
-                            <p class="profession">Web Exploitation</p>
-
-                            <p class="text-center">"Second-Year"</p>
                         </div>
                         <div class="footer">
-                            <div class="rating">
-                                <i class="fa fa-mail-forward"></i>   
+                            <div class="social-links text-center">
+                                <a href="#" class="facebook"><i class="fa fa-github fa-fw"></i></a>
+                                <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
                             </div>
                         </div>
-                    </div>
-                </div> <!-- end front panel -->
-                <div class="back">
-                    <div class="header">
-                        <h5 class="motto">""</h5>
-                    </div>
-                    <div class="content">
-                        <div class="main">
-                            <h4 class="text-center">Member of team bi0s</h4>
-                            <p class="text-center"></p>
-
+                    </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div> <!-- end card-container -->
+        </div> <!-- end col-sm-3 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="card-container">
+                <div class="card">
+                    <div class="front">
+                        <div class="cover">
+                            <img src="img/members/rotating_card_thumb3.png"/>
                         </div>
-                    </div>
-                    <div class="footer">
-                        <div class="social-links text-center">
-                            <a href="#" class="facebook"><i class="fa fa-github fa-fw"></i></a>
-                            <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
-                            <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                        <div class="user">
+                            <img class="img-circle" src="img/members/ashwathi.jpg" style="height:100%;width: 100%;"/>
                         </div>
-                    </div>
-                </div> <!-- end back panel -->
-            </div> <!-- end card -->
-        </div> <!-- end card-container -->
-    </div> <!-- end col-sm-3 -->
-            <div class="col-md-4 col-sm-6">
-                <div class="card-container">
-                    <div class="card">
-                        <div class="front">
-                            <div class="cover">
-                                <img src="img/members/rotating_card_thumb3.png"/>
-                            </div>
-                            <div class="user">
-                                <img class="img-circle" src="img/members/suraj.png"/>
-                            </div>
-                            <div class="content">
-                                <div class="main">
-                                    <h3 class="name">Suraj K Suresh</h3>
-                                    <p class="profession">REVERSE ENGINEERING(Windows)</p>
-    
-                                    <p class="text-center">"Second-Year"</p>
-                                </div>
-                                <div class="footer">
-                                    <div class="rating">
-                                        <i class="fa fa-mail-forward"></i>   
-                                    </div>
-                                </div>
-                            </div>
-                        </div> <!-- end front panel -->
-                        <div class="back">
-                            <div class="header">
-                                <h5 class="motto">""</h5>
-                            </div>
-                            <div class="content">
-                                <div class="main">
-                                    <h4 class="text-center">Member of team bi0s</h4>
-                                    <p class="text-center"></p>
-    
-                                </div>
+                        <div class="content">
+                            <div class="main">
+                                <h3 class="name">Ashwathi Sasi</h3>
+                                <p class="profession">Reverse Engineering</p>
+                                <p class="text-center">"Third-Year"</p>
                             </div>
                             <div class="footer">
-                                <div class="social-links text-center">
-                                    <a href="#" class="facebook"><i class="fa fa-github fa-fw"></i></a>
-                                    <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
-                                    <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                <div class="rating">
+                                    <i class="fa fa-mail-forward"></i>   
                                 </div>
                             </div>
-                        </div> <!-- end back panel -->
-                    </div> <!-- end card -->
-                </div> <!-- end card-container -->
-            </div> <!-- end col-sm-3 -->
-            <div class="col-md-4 col-sm-6">
-                <div class="card-container">
-                    <div class="card">
-                        <div class="front">
-                            <div class="cover">
-                                <img src="img/members/rotating_card_thumb3.png"/>
-                            </div>
-                            <div class="user">
-                                <img class="img-circle" src="img/members/jaswant.jpeg"/>
-                            </div>
-                            <div class="content">
-                                <div class="main">
-                                    <h3 class="name">Jaswanth Bommidi</h3>
-                                    <p class="profession">FORENSICS</p>
-    
-                                    <p class="text-center">"Second-Year"</p>
-                                </div>
-                                <div class="footer">
-                                    <div class="rating">
-                                        <i class="fa fa-mail-forward"></i>   
-                                    </div>
-                                </div>
-                            </div>
-                        </div> <!-- end front panel -->
-                        <div class="back">
-                            <div class="header">
-                                <h5 class="motto">""</h5>
-                            </div>
-                            <div class="content">
-                                <div class="main">
-                                    <h4 class="text-center">Member of team bi0s</h4>
-                                    <p class="text-center"></p>
-    
-                                </div>
-                            </div>
-                            <div class="footer">
-                                <div class="social-links text-center">
-                                    <a href="https://www.github.com/theevilsyn" class="twitter"><i class="fa fa-github fa-fw"></i></a>
-                                    <a href="https://evilsyn.com" class="github"><i class="fa fa-wordpress fa-fw"></i></a>
-                                    <a href="https://www.twitter.com/theevilsyn" class="wordpress"><i class="fa fa-twitter fa-fw"></i></a>
-                                </div>
-                            </div>
-                        </div> <!-- end back panel -->
-                    </div> <!-- end card -->
-                </div> <!-- end card-container -->
-            </div> <!-- end col-sm-3 -->
-      
-            <div class="col-md-4 col-sm-6">
-                <div class="card-container">
-                    <div class="card">
-                        <div class="front">
-                            <div class="cover">
-                                <img src="img/members/rotating_card_thumb3.png"/>
-                            </div>
-                            <div class="user">
-                                <img class="img-circle" src="img/members/head_of_bi0s.png"/>
-                            </div>
-                            <div class="content">
-                                <div class="main">
-                                    <h3 class="name">Aditya Vardhan Padala</h3>
-                                    <p class="profession">REVERSE ENGINEERING</p>
-                                    <input type="hidden" value="I AM HEAD OF BI0S ">
-    
-                                    <p class="text-center">Second-Year</p>
-                                </div>
-                                <div class="footer">
-                                    <div class="rating">
-                                        <i class="fa fa-mail-forward"></i>   
-                                    </div>
-                                </div>
-                            </div>
-                        </div> <!-- end front panel -->
-                        <div class="back">
-                            <div class="header">
-                                <h5 class="motto">""</h5>
-                            </div>
-                            <div class="content">
-                                <div class="main">
-                                    <h4 class="text-center"> Description</h4>
-                                    <p class="text-center">Taking things apart bit by bit.
-                                        <a href='htttps://www.adityapadala.com'>htttps://www.adityapadala.com</a>
-                                        </p>
-    
-                                </div>
-                            </div>
-                            <div class="footer">
-                                <div class="social-links text-center">
-                                    <a href="https://github.com/adityavardhanpadala" class="facebook"><i class="fa fa-github fa-fw"></i></a>
-                                    <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
-                                    <a href="https://twitter.com/silverf3lix" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
-                                </div>
-                            </div>
-                        </div> <!-- end back panel -->
-                    </div> <!-- end card -->
-                </div> <!-- end card-container -->
-            </div> <!-- end col-sm-3 -->
-
-            <div class="col-md-4 col-sm-6">
-                <div class="card-container">
-                    <div class="card">
-                        <div class="front">
-                            <div class="cover">
-                                <img src="img/members/rotating_card_thumb3.png"/>
-                            </div>
-                            <div class="user">
-                                <img class="img-circle" src="img/members/yashwanth.jpg"/>
-                            </div>
-                            <div class="content">
-                                <div class="main">
-                                    <h3 class="name">Yaswant R</h3>
-                                    <p class="profession">Web Exploitation</p>
-                                    <input type="hidden" value="">
-    
-                                    <p class="text-center">Second-Year</p>
-                                </div>
-                                <div class="footer">
-                                    <div class="rating">
-                                        <i class="fa fa-mail-forward"></i>   
-                                    </div>
-                                </div>
-                            </div>
-                        </div> <!-- end front panel -->
-                        <div class="back">
-                            <div class="header">
-                                <h5 class="motto">""</h5>
-                            </div>
-                            <div class="content">
-                                <div class="main">
-                                    <h4 class="text-center"> Member of team bi0s</h4>
-                                    <p class="text-center"></p>
-    
-                                </div>
-                            </div>
-                            <div class="footer">
-                                <div class="social-links text-center">
-                                    <a href="https://github.com/Az3z3l/" class="github"><i class="fa fa-github fa-fw"></i></a>
-                                    <a href="https://az3z3l.github.io/" class="wordpress"><i class="fa fa-wordpress fa-fw"></i></a>
-                                    <a href="https://twitter.com/Az3z3l" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
-                                </div>
-                            </div>
-                        </div> <!-- end back panel -->
-                    </div> <!-- end card -->
-                </div> <!-- end card-container -->
-            </div> <!-- end col-sm-3 -->
-
-            <div class="col-md-4 col-sm-6">
-                <div class="card-container">
-                    <div class="card">
-                        <div class="front">
-                            <div class="cover">
-                                <img src="img/members/rotating_card_thumb3.png"/>
-                            </div>
-                            <div class="user">
-                                <img class="img-circle" src="img/members/pranjal.jpeg"/>
-                            </div>
-                            <div class="content">
-                                <div class="main">
-                                    <h3 class="name">Pranjal Singh</h3>
-                                    <p class="profession">REVERSE-ENGINEERING</p>
+                        </div>
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                        <div class="header">
+                            <h5 class="motto">""</h5>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h4 class="text-center">Member of team bi0s</h4>
+                                <p class="text-center">An avid learner and reverse engineer.
+                                    ashwathisasi.wordpress.com
+                                    </p>
         
-                                    <p class="text-center">"Second-Year"</p>
-                                </div>
-                                <div class="footer">
-                                    <div class="rating">
-                                        <i class="fa fa-mail-forward"></i>   
-                                    </div>
-                                </div>
                             </div>
-                        </div> <!-- end front panel -->
-                        <div class="back">
-                            <div class="header">
-                                <h5 class="motto">""</h5>
+                        </div>
+                        <div class="footer">
+                            <div class="social-links text-center">
+                                <a href="#" class="facebook"><i class="fa fa-github fa-fw"></i></a>
+                                <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
                             </div>
-                            <div class="content">
-                                <div class="main">
-                                    <h4 class="text-center">Member of team bi0s</h4>
-                                    <p class="text-center"></p>
-        
-                                </div>
-                            </div>
-                            <div class="footer">
-                                <div class="social-links text-center">
-                                    <a href="#" class="facebook"><i class="fa fa-github fa-fw"></i></a>
-                                    <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
-                                    <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
-                                </div>
-                            </div>
-                        </div> <!-- end back panel -->
-                    </div> <!-- end card -->
-                </div> <!-- end card-container -->
-            </div> <!-- end col-sm-3 -->
-            <div class="col-md-4 col-sm-6">
-                <div class="card-container">
-                    <div class="card">
-                        <div class="front">
-                            <div class="cover">
-                                <img src="img/members/rotating_card_thumb3.png"/>
-                            </div>
-                            <div class="user">
-                                <img class="img-circle" src="img/members/vishnu101.jpg"/>
-                            </div>
-                            <div class="content">
-                                <div class="main">
-                                    <h3 class="name">Vishnu Madhav</h3>
-                                    <p class="profession">REVERSE-ENGINEERING</p>
-        
-                                    <p class="text-center">"Second-Year"</p>
-                                </div>
-                                <div class="footer">
-                                    <div class="rating">
-                                        <i class="fa fa-mail-forward"></i>   
-                                    </div>
-                                </div>
-                            </div>
-                        </div> <!-- end front panel -->
-                        <div class="back">
-                            <div class="header">
-                                <h5 class="motto">""</h5>
-                            </div>
-                            <div class="content">
-                                <div class="main">
-                                    <h4 class="text-center">Member of team bi0s</h4>
-                                    <p class="text-center">
-                                        Emacs was my first love! And they say you can never forget your first love!
-                                        </p>
-        
-                                </div>
+                        </div>
+                    </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div> <!-- end card-container -->
+        </div> <!-- end col-sm-3 -->
+           <div class="col-md-4 col-sm-6">
+            <div class="card-container">
+                <div class="card">
+                    <div class="front">
+                        <div class="cover">
+                            <img src="img/members/rotating_card_thumb3.png"/>
+                        </div>
+                        <div class="user">
+                            <img class="img-circle" src="img/members/geethnajpg"/>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h3 class="name">Geethna TK</h3>
+                                <p class="profession">Reverse Engineering</p>
+                                <p class="text-center">"Third-Year"</p>
                             </div>
                             <div class="footer">
-                                <div class="social-links text-center">
-                                    <a href="#" class="facebook"><i class="fa fa-github fa-fw"></i></a>
-                                    <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
-                                    <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                <div class="rating">
+                                    <i class="fa fa-mail-forward"></i>   
                                 </div>
                             </div>
-                        </div> <!-- end back panel -->
-                    </div> <!-- end card -->
-                </div> <!-- end card-container -->
-            </div> <!-- end col-sm-3 -->
-            <div class="col-md-4 col-sm-6">
-                <div class="card-container">
-                    <div class="card">
-                        <div class="front">
-                            <div class="cover">
-                                <img src="img/members/rotating_card_thumb3.png"/>
+                        </div>
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                        <div class="header">
+                            <h5 class="motto">""</h5>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h4 class="text-center">Member of team bi0s</h4>
+                                <p class="text-center"></p>
+        
                             </div>
-                            <div class="user">
-                                <img class="img-circle" src="img/members/vivek.jpg"/>
+                        </div>
+                        <div class="footer">
+                            <div class="social-links text-center">
+                                <a href="#" class="facebook"><i class="fa fa-github fa-fw"></i></a>
+                                <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
                             </div>
-                            <div class="content">
-                                <div class="main">
-                                    <h3 class="name">Vivek Kamasethy</h3>
-                                    <p class="profession">Reverse Engineering</p>
-                                    <p class="text-center">Second-Year</p>
-                                </div>
-                                <div class="footer">
-                                    <div class="rating">
-                                        <i class="fa fa-mail-forward"></i>   
-                                    </div>
-                                </div>
-                            </div>
-                        </div> <!-- end front panel -->
-                        <div class="back">
-                            <div class="header">
-                                <h5 class="motto">""</h5>
-                            </div>
-                            <div class="content">
-                                <div class="main">
-                                    <h4 class="text-center">Member of team bi0s</h4>
-                                    <p class="text-center"></p>
-    
-                                </div>
+                        </div>
+                    </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div> <!-- end card-container -->
+        </div> <!-- end col-sm-3 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="card-container">
+                <div class="card">
+                    <div class="front">
+                        <div class="cover">
+                            <img src="img/members/rotating_card_thumb3.png"/>
+                        </div>
+                        <div class="user">
+                            <img class="img-circle" src="img/members/soumya.jpg"/>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h3 class="name">Sowmya Potluri</h3>
+                                <p class="profession">Cryptography</p>
+                                <p class="text-center">"Third-Year"</p>
                             </div>
                             <div class="footer">
-                                <div class="social-links text-center">
-                                    <a href="#" class="facebook"><i class="fa fa-github fa-fw"></i></a>
-                                    <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
-                                    <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                <div class="rating">
+                                    <i class="fa fa-mail-forward"></i>   
                                 </div>
                             </div>
-                        </div> <!-- end back panel -->
-                    </div> <!-- end card -->
-                </div> <!-- end card-container -->
-            </div> <!-- end col-sm-3 -->
+                        </div>
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                        <div class="header">
+                            <h5 class="motto">""</h5>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h4 class="text-center">Member of team bi0s</h4>
+                                <p class="text-center"></p>
+        
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <div class="social-links text-center">
+                                <a href="#" class="facebook"><i class="fa fa-github fa-fw"></i></a>
+                                <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                            </div>
+                        </div>
+                    </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div> <!-- end card-container -->
+        </div> <!-- end col-sm-3 -->
+           <div class="col-md-4 col-sm-6">
+            <div class="card-container">
+                <div class="card">
+                    <div class="front">
+                        <div class="cover">
+                            <img src="img/members/rotating_card_thumb3.png"/>
+                        </div>
+                        <div class="user">
+                            <img class="img-circle" src="img/members/athira.png" style="height:100%;width: 100%;"/>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h3 class="name">Aathira Dineshan</h3>
+                                <p class="profession">Hardware</p>
+        
+                                <p class="text-center">"Third year"</p>
+                            </div>
+                            <div class="footer">
+                                <div class="rating">
+                                    <i class="fa fa-mail-forward"></i>   
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                        <div class="header">
+                            <h5 class="motto">""</h5>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h4 class="text-center">Description</h4>
+                                <p class="text-center">Junior researcher in IoT security and CAN, with ML and Android along the way</p>
+        
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <div class="social-links text-center">
+                                <a href="https://github.com/Athi101" class="facebook"><i class="fa fa-github fa-fw"></i></a>
+                                <a href="https://www.linkedin.com/in/aathira-dineshan-855816193" class="google"><i class="fa fa-linkedin fa-fw"></i></a>
+                                <a href="https://twitter.com/Aathi_Dsh" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                            </div>
+                        </div>
+                    </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div> <!-- end card-container -->
+        </div> <!-- end col-sm-3 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="card-container">
+                <div class="card">
+                    <div class="front">
+                        <div class="cover">
+                            <img src="img/members/rotating_card_thumb3.png"/>
+                        </div>
+                        <div class="user">
+                            <img class="img-circle" src="img/members/sruthi.jpg"/>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h3 class="name">Shruti Dixit </h3>
+                                <p class="profession">Reverse Engineering</p>
+        
+                                <p class="text-center">"Third-Year"</p>
+                            </div>
+                            <div class="footer">
+                                <div class="rating">
+                                    <i class="fa fa-mail-forward"></i>   
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                        <div class="header">
+                            <h5 class="motto">""</h5>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h4 class="text-center">Member of team bi0s</h4>
+                                <p class="text-center">
+                                    Stripping the binaries apart and reading between the lines. 
+                                    </p>
+        
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <div class="social-links text-center">
+                                <a href="#" class="facebook"><i class="fa fa-github fa-fw"></i></a>
+                                <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                            </div>
+                        </div>
+                    </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div> <!-- end card-container -->
+        </div> <!-- end col-sm-3 -->
+        <div class="col-md-4 col-sm-6">
+            <div class="card-container">
+                <div class="card">
+                    <div class="front">
+                        <div class="cover">
+                            <img src="img/members/rotating_card_thumb3.png"/>
+                        </div>
+                        <div class="user">
+                            <img class="img-circle" src="img/members/ritvik.jpg" style="height:100%;width: 100%;"/>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h3 class="name">Sai Ritvik T</h3>
+                                <p class="profession">Binary Exploitation</p>
+                                <p class="text-center">"Second-Year"</p>
+                            </div>
+                            <div class="footer">
+                                <div class="rating">
+                                    <i class="fa fa-mail-forward"></i>   
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- end front panel -->
+                    <div class="back">
+                        <div class="header">
+                            <h5 class="motto">""</h5>
+                        </div>
+                        <div class="content">
+                            <div class="main">
+                                <h4 class="text-center">Member of team bi0s</h4>
+                                <p class="text-center"></p>
+        
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <div class="social-links text-center">
+                                <a href="#" class="facebook"><i class="fa fa-github fa-fw"></i></a>
+                                <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                            </div>
+                        </div>
+                    </div> <!-- end back panel -->
+                </div> <!-- end card -->
+            </div> <!-- end card-container -->
+        </div> <!-- end col-sm-3 -->
+            <!--         <div class="col-sm-1"></div> -->
+            <!--         <div class="col-sm-1"></div> -->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="front">
+                                    <div class="cover">
+                                        <img src="img/members/rotating_card_thumb3.png"/>
+                                    </div>
+                                    <div class="user">
+                                        <img class="img-circle" src="img/members/nihit.jpeg" style="height:100%;width: 100%;"/>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h3 class="name">Nihith</h3>
+                                            <p class="profession">Forensics</p>
             
+                                            <p class="text-center">"Second-Year"</p>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="rating">
+                                                <i class="fa fa-mail-forward"></i>   
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end front panel -->
+                                <div class="back">
+                                    <div class="header">
+                                        <h5 class="motto">""</h5>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h4 class="text-center">Member of team bi0s</h4>
+                                            <p class="text-center">Digital Forensics Analyst
+                                               <a href="http://www.bolisettynihith.wordpress.com">bolisettynihith.wordpress.com</a>
+                                                </p>
+            
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="social-links text-center">
+                                            <a href="https://github.com/bolisettynihith" class="github"><i class="fa fa-github fa-fw"></i></a>
+                                            <a href="https://bolisettynihith.github.io/" class="wordpress"><i class="fa fa-github fa-fw"></i></a>
+                                            <a href=" https://twitter.com/NihithNihi" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                        </div>
+                                    </div>
+                                </div> <!-- end back panel -->
+                            </div> <!-- end card -->
+                        </div> <!-- end card-container -->
+                    </div> <!-- end col-sm-3 -->
+                    
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="front">
+                                    <div class="cover">
+                                        <img src="img/members/rotating_card_thumb3.png"/>
+                                    </div>
+                                    <div class="user">
+                                        <img class="img-circle" src="img/members/sandra.jpeg"/>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h3 class="name">Sandhra </h3>
+                                            <p class="profession">Reverse Engineering</p>
+            
+                                            <p class="text-center">"Second-Year"</p>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="rating">
+                                                <i class="fa fa-mail-forward"></i>   
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end front panel -->
+                                <div class="back">
+                                    <div class="header">
+                                        <h5 class="motto">""</h5>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h4 class="text-center">Member of team bi0s</h4>
+                                            <p class="text-center"></p>
+            
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="social-links text-center">
+                                            <a href="#" class="facebook"><i class="fa fa-github fa-fw"></i></a>
+                                            <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                            <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                        </div>
+                                    </div>
+                                </div> <!-- end back panel -->
+                            </div> <!-- end card -->
+                        </div> <!-- end card-container -->
+                    </div> <!-- end col-sm-3 -->
+            <!--         <div class="col-sm-1"></div> -->
+                         <div class="col-md-4 col-sm-6">
+                         <div class="card-container">
+                            <div class="card">
+                                <div class="front">
+                                    <div class="cover">
+                                        <img src="img/members/rotating_card_thumb2.png"/>
+                                    </div>
+                                    <div class="user">
+                                        <img class="img-circle" src="img/members/nikhil1.png" style="height:100%;width: 100%;"/>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h3 class="name">Nikhil Nair </h3>
+                                            <p class="profession">WEB EXPLOITATION</p>
+                                            <p class="text-center">Second-Year</p>
+                                        </div>
+                                        <div class="footer">
+                                            <i class="fa fa-mail-forward"></i>   
+                                        </div>
+                                    </div>
+                                </div> <!-- end front panel -->
+                                <div class="back">
+                                    <div class="header">
+                                        <h5 class="motto">""</h5>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h4 class="text-center">Member of team bi0s</h4>
+                                            <p class="text-center">If no one came from the future to stop you how bad could your decissions be.</p>
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="social-links text-center">
+                                            <a href="https://github.com/Captain-K-101" class="facebook"><i class="fa fa-github fa-fw"></i></a>
+                                            <a href="https://playingwithhacks.github.io" class="google"><i class="fa fa-wordpress fa-fw"></i></a>
+                                            <a href="https://twitter.com/captainkay11" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                        </div>
+                                    </div>
+                                </div> <!-- end back panel -->
+                            </div> <!-- end card -->
+                        </div> <!-- end card-container -->
+                    </div> <!-- end col sm 3 -->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="front">
+                                    <div class="cover">
+                                        <img src="img/members/rotating_card_thumb3.png"/>
+                                    </div>
+                                    <div class="user">
+                                        <img class="img-circle" src="img/members/sourag.jpeg"/>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h3 class="name">Sourag C </h3>
+                                            <p class="profession">Binary-Exploitation</p>
+            
+                                            <p class="text-center">"Second-Year"</p>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="rating">
+                                                <i class="fa fa-mail-forward"></i>   
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end front panel -->
+                                <div class="back">
+                                    <div class="header">
+                                        <h5 class="motto">""</h5>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h4 class="text-center">Member of team bi0s</h4>
+                                            <p class="text-center">
+                                                Anything related to Science and technology interests me.
+                                                </p>
+            
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="social-links text-center">
+                                            <a href="https://github.com/souragc" class="github"><i class="fa fa-github fa-fw"></i></a>
+                                            <a href="https://www.linkedin.com/in/sourag-c-05bb3a197/" class="linkedin"><i class="fa fa-linkedin fa-fw"></i></a>
+                                            <a href=" https://twitter/com/3agl31" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                        </div>
+                                    </div>
+                                </div> <!-- end back panel -->
+                            </div> <!-- end card -->
+                        </div> <!-- end card-container -->
+                    </div> <!-- end col-sm-3 -->
+                    
+        
+                    
+        
+                    
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="front">
+                                    <div class="cover">
+                                        <img src="img/members/rotating_card_thumb3.png"/>
+                                    </div>
+                                    <div class="user">
+                                        <img class="img-circle" src="img/members/meenakshi.png" style="height:100%;width: 100%;"/>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h3 class="name">Meenakshi SL</h3>
+                                            <p class="profession">Cryptography</p>
+            
+                                            <p class="text-center">"Second-Year"</p>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="rating">
+                                                <i class="fa fa-mail-forward"></i>   
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end front panel -->
+                                <div class="back">
+                                    <div class="header">
+                                        <h5 class="motto">""</h5>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h4 class="text-center">Member of team bi0s</h4>
+                                            <p class="text-center">I like my cryptosystems the way I like my coffee - real and strong. </p>
+            
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="social-links text-center">
+                                            <a href="#" class="facebook"><i class="fa fa-github fa-fw"></i></a>
+                                            <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                            <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                        </div>
+                                    </div>
+                                </div> <!-- end back panel -->
+                            </div> <!-- end card -->
+                        </div> <!-- end card-container -->
+                    </div> <!-- end col-sm-3 -->
+                       <div class="col-md-4 col-sm-6">
+                <div class="card-container">
+                    <div class="card">
+                        <div class="front">
+                            <div class="cover">
+                                <img src="img/members/rotating_card_thumb3.png"/>
+                            </div>
+                            <div class="user">
+                                <img class="img-circle" src="img/members/Gopika.jpg"/>
+                            </div>
+                            <div class="content">
+                                <div class="main">
+                                    <h3 class="name">Gopika Subramanian</h3>
+                                    <p class="profession">Web Exploitation</p>
+        
+                                    <p class="text-center">"Second-Year"</p>
+                                </div>
+                                <div class="footer">
+                                    <div class="rating">
+                                        <i class="fa fa-mail-forward"></i>   
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- end front panel -->
+                        <div class="back">
+                            <div class="header">
+                                <h5 class="motto">""</h5>
+                            </div>
+                            <div class="content">
+                                <div class="main">
+                                    <h4 class="text-center">Member of team bi0s</h4>
+                                    <p class="text-center"></p>
+        
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <div class="social-links text-center">
+                                    <a href="#" class="facebook"><i class="fa fa-github fa-fw"></i></a>
+                                    <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                    <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                </div>
+                            </div>
+                        </div> <!-- end back panel -->
+                    </div> <!-- end card -->
+                </div> <!-- end card-container -->
+            </div> <!-- end col-sm-3 -->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="front">
+                                    <div class="cover">
+                                        <img src="img/members/rotating_card_thumb3.png"/>
+                                    </div>
+                                    <div class="user">
+                                        <img class="img-circle" src="img/members/suraj.png"/>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h3 class="name">Suraj K Suresh</h3>
+                                            <p class="profession">REVERSE ENGINEERING(Windows)</p>
+            
+                                            <p class="text-center">"Second-Year"</p>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="rating">
+                                                <i class="fa fa-mail-forward"></i>   
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end front panel -->
+                                <div class="back">
+                                    <div class="header">
+                                        <h5 class="motto">""</h5>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h4 class="text-center">Member of team bi0s</h4>
+                                            <p class="text-center"></p>
+            
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="social-links text-center">
+                                            <a href="#" class="facebook"><i class="fa fa-github fa-fw"></i></a>
+                                            <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                            <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                        </div>
+                                    </div>
+                                </div> <!-- end back panel -->
+                            </div> <!-- end card -->
+                        </div> <!-- end card-container -->
+                    </div> <!-- end col-sm-3 -->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="front">
+                                    <div class="cover">
+                                        <img src="img/members/rotating_card_thumb3.png"/>
+                                    </div>
+                                    <div class="user">
+                                        <img class="img-circle" src="img/members/jaswant.jpeg"/>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h3 class="name">Jaswanth Bommidi</h3>
+                                            <p class="profession">FORENSICS</p>
+            
+                                            <p class="text-center">"Second-Year"</p>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="rating">
+                                                <i class="fa fa-mail-forward"></i>   
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end front panel -->
+                                <div class="back">
+                                    <div class="header">
+                                        <h5 class="motto">""</h5>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h4 class="text-center">Member of team bi0s</h4>
+                                            <p class="text-center"></p>
+            
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="social-links text-center">
+                                            <a href="https://www.github.com/theevilsyn" class="twitter"><i class="fa fa-github fa-fw"></i></a>
+                                            <a href="https://evilsyn.com" class="github"><i class="fa fa-wordpress fa-fw"></i></a>
+                                            <a href="https://www.twitter.com/theevilsyn" class="wordpress"><i class="fa fa-twitter fa-fw"></i></a>
+                                        </div>
+                                    </div>
+                                </div> <!-- end back panel -->
+                            </div> <!-- end card -->
+                        </div> <!-- end card-container -->
+                    </div> <!-- end col-sm-3 -->
+              
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="front">
+                                    <div class="cover">
+                                        <img src="img/members/rotating_card_thumb3.png"/>
+                                    </div>
+                                    <div class="user">
+                                        <img class="img-circle" src="img/members/head_of_bi0s.png"/>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h3 class="name">Aditya Vardhan Padala</h3>
+                                            <p class="profession">REVERSE ENGINEERING</p>
+                                            <input type="hidden" value="I AM HEAD OF BI0S ">
+            
+                                            <p class="text-center">Second-Year</p>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="rating">
+                                                <i class="fa fa-mail-forward"></i>   
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end front panel -->
+                                <div class="back">
+                                    <div class="header">
+                                        <h5 class="motto">""</h5>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h4 class="text-center"> Description</h4>
+                                            <p class="text-center">Taking things apart bit by bit.
+                                                <a href='htttps://www.adityapadala.com'>htttps://www.adityapadala.com</a>
+                                                </p>
+            
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="social-links text-center">
+                                            <a href="https://github.com/adityavardhanpadala" class="facebook"><i class="fa fa-github fa-fw"></i></a>
+                                            <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                            <a href="https://twitter.com/silverf3lix" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                        </div>
+                                    </div>
+                                </div> <!-- end back panel -->
+                            </div> <!-- end card -->
+                        </div> <!-- end card-container -->
+                    </div> <!-- end col-sm-3 -->
+        
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="front">
+                                    <div class="cover">
+                                        <img src="img/members/rotating_card_thumb3.png"/>
+                                    </div>
+                                    <div class="user">
+                                        <img class="img-circle" src="img/members/yashwanth.jpg"/>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h3 class="name">Yaswant R</h3>
+                                            <p class="profession">Web Exploitation</p>
+                                            <input type="hidden" value="">
+            
+                                            <p class="text-center">Second-Year</p>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="rating">
+                                                <i class="fa fa-mail-forward"></i>   
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end front panel -->
+                                <div class="back">
+                                    <div class="header">
+                                        <h5 class="motto">""</h5>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h4 class="text-center"> Member of team bi0s</h4>
+                                            <p class="text-center"></p>
+            
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="social-links text-center">
+                                            <a href="https://github.com/Az3z3l/" class="github"><i class="fa fa-github fa-fw"></i></a>
+                                            <a href="https://az3z3l.github.io/" class="wordpress"><i class="fa fa-wordpress fa-fw"></i></a>
+                                            <a href="https://twitter.com/Az3z3l" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                        </div>
+                                    </div>
+                                </div> <!-- end back panel -->
+                            </div> <!-- end card -->
+                        </div> <!-- end card-container -->
+                    </div> <!-- end col-sm-3 -->
+        
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="front">
+                                    <div class="cover">
+                                        <img src="img/members/rotating_card_thumb3.png"/>
+                                    </div>
+                                    <div class="user">
+                                        <img class="img-circle" src="img/members/pranjal.jpeg"/>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h3 class="name">Pranjal Singh</h3>
+                                            <p class="profession">REVERSE-ENGINEERING</p>
+                
+                                            <p class="text-center">"Second-Year"</p>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="rating">
+                                                <i class="fa fa-mail-forward"></i>   
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end front panel -->
+                                <div class="back">
+                                    <div class="header">
+                                        <h5 class="motto">""</h5>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h4 class="text-center">Member of team bi0s</h4>
+                                            <p class="text-center"></p>
+                
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="social-links text-center">
+                                            <a href="#" class="facebook"><i class="fa fa-github fa-fw"></i></a>
+                                            <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                            <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                        </div>
+                                    </div>
+                                </div> <!-- end back panel -->
+                            </div> <!-- end card -->
+                        </div> <!-- end card-container -->
+                    </div> <!-- end col-sm-3 -->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="front">
+                                    <div class="cover">
+                                        <img src="img/members/rotating_card_thumb3.png"/>
+                                    </div>
+                                    <div class="user">
+                                        <img class="img-circle" src="img/members/vishnu101.jpg"/>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h3 class="name">Vishnu Madhav</h3>
+                                            <p class="profession">REVERSE-ENGINEERING</p>
+                
+                                            <p class="text-center">"Second-Year"</p>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="rating">
+                                                <i class="fa fa-mail-forward"></i>   
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end front panel -->
+                                <div class="back">
+                                    <div class="header">
+                                        <h5 class="motto">""</h5>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h4 class="text-center">Member of team bi0s</h4>
+                                            <p class="text-center">
+                                                Emacs was my first love! And they say you can never forget your first love!
+                                                </p>
+                
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="social-links text-center">
+                                            <a href="#" class="facebook"><i class="fa fa-github fa-fw"></i></a>
+                                            <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                            <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                        </div>
+                                    </div>
+                                </div> <!-- end back panel -->
+                            </div> <!-- end card -->
+                        </div> <!-- end card-container -->
+                    </div> <!-- end col-sm-3 -->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="front">
+                                    <div class="cover">
+                                        <img src="img/members/rotating_card_thumb3.png"/>
+                                    </div>
+                                    <div class="user">
+                                        <img class="img-circle" src="img/members/vivek.jpg"/>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h3 class="name">Vivek Kamasethy</h3>
+                                            <p class="profession">Reverse Engineering</p>
+                                            <p class="text-center">Second-Year</p>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="rating">
+                                                <i class="fa fa-mail-forward"></i>   
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end front panel -->
+                                <div class="back">
+                                    <div class="header">
+                                        <h5 class="motto">""</h5>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h4 class="text-center">Member of team bi0s</h4>
+                                            <p class="text-center"></p>
+            
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="social-links text-center">
+                                            <a href="#" class="facebook"><i class="fa fa-github fa-fw"></i></a>
+                                            <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                            <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                        </div>
+                                    </div>
+                                </div> <!-- end back panel -->
+                            </div> <!-- end card -->
+                        </div> <!-- end card-container -->
+                    </div> <!-- end col-sm-3 -->
+                    
+        
+                </div> <!-- end col-sm-10 -->
+            </div> <!-- end row -->
+        
+        </div>
+        </div>
+      </div>
+      
+      <div id="Alum" class="tabcontent">
+        <div class="service_area">
+            <div class="container">
+                <div class="row">
+                    <h1 class="title">
+                        Team Members
+                        <br>
+                     </h1>
+                    <div class="col-sm-10 col-sm-offset-1">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card-container">
+                                <div class="card">
+                                    <div class="front">
+                                        <div class="cover">
+                                            <img src="img/members/rotating_card_thumb3.png"/>
+                                        </div>
+                                        <div class="user">
+                                            <img class="img-circle" src="img/members/alum/h.jpeg"/>
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h3 class="name">Anirudh Anand</h3>
+                                                <p class="profession">WEB EXPLOITATION</p>
+                                                <p class="text-center">Alumini</p>
+                                            </div>
+                                            <div class="footer">
+                                                <div class="rating">
+                                                    <i class="fa fa-mail-forward"></i>   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end front panel -->
+                                    <div class="back">
+                                        <div class="header">
+                                            <h5 class="motto">""</h5>
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h4 class="text-center">Former member of team bi0s</h4>
+                                                <p class="text-center"></p>
+                
+                                            </div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="social-links text-center">
+                                                <a href="" class="wordpress"><i class="fa fa-github fa-fw"></i></a>
+                                                <a href="" class="github"><i class="fa fa-google-plus fa-fw"></i></a>
+                                                <a href="" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end back panel -->
+                                </div> <!-- end card -->
+                            </div> <!-- end card-container -->
+                        </div> <!-- end col-sm-3 -->
+        
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card-container">
+                                <div class="card">
+                                    <div class="front">
+                                        <div class="cover">
+                                            <img src="img/members/rotating_card_thumb3.png"/>
+                                        </div>
+                                        <div class="user">
+                                            <img class="img-circle" src="img/members/alum/8.jpg"/>
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h3 class="name">Arjun TU</h3>
+                                                <p class="profession">REVERSE ENGINEERING</p>
+                                                <p class="text-center">Alumini</p>
+                                            </div>
+                                            <div class="footer">
+                                                <div class="rating">
+                                                    <i class="fa fa-mail-forward"></i>   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end front panel -->
+                                    <div class="back">
+                                        <div class="header">
+                                            <h5 class="motto">""</h5>
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h4 class="text-center">Former member of team bi0s</h4>
+                                                <p class="text-center"></p>
+                
+                                            </div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="social-links text-center">
+                                                <a href="" class="wordpress"><i class="fa fa-github fa-fw"></i></a>
+                                                <a href="" class="github"><i class="fa fa-google-plus fa-fw"></i></a>
+                                                <a href="" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end back panel -->
+                                </div> <!-- end card -->
+                            </div> <!-- end card-container -->
+                        </div> <!-- end col-sm-3 -->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card-container">
+                                <div class="card">
+                                    <div class="front">
+                                        <div class="cover">
+                                            <img src="img/members/rotating_card_thumb3.png"/>
+                                        </div>
+                                        <div class="user">
+                                            <img class="img-circle" src="img/members/alum/3.png"/>
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h3 class="name">Gokul Krishna P</h3>
+                                                <p class="profession">WEB EXPLOITATION</p>
+                                                <p class="text-center">Alumini</p>
+                                            </div>
+                                            <div class="footer">
+                                                <div class="rating">
+                                                    <i class="fa fa-mail-forward"></i>   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end front panel -->
+                                    <div class="back">
+                                        <div class="header">
+                                            <h5 class="motto">""</h5>
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h4 class="text-center">Former member of team bi0s</h4>
+                                                <p class="text-center"></p>
+                
+                                            </div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="social-links text-center">
+                                                <a href="" class="wordpress"><i class="fa fa-github fa-fw"></i></a>
+                                                <a href="" class="github"><i class="fa fa-google-plus fa-fw"></i></a>
+                                                <a href="" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end back panel -->
+                                </div> <!-- end card -->
+                            </div> <!-- end card-container -->
+                        </div> <!-- end col-sm-3 -->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card-container">
+                                <div class="card">
+                                    <div class="front">
+                                        <div class="cover">
+                                            <img src="img/members/rotating_card_thumb3.png"/>
+                                        </div>
+                                        <div class="user">
+                                            <img class="img-circle" src="img/members/alum/4.jpg"/>
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h3 class="name">Jayakrishna Menon</h3>
+                                                <p class="profession">BINARY EXPLOITATION</p>
+                                                <p class="text-center">Alumini</p>
+                                            </div>
+                                            <div class="footer">
+                                                <div class="rating">
+                                                    <i class="fa fa-mail-forward"></i>   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end front panel -->
+                                    <div class="back">
+                                        <div class="header">
+                                            <h5 class="motto">""</h5>
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h4 class="text-center">Former member of team bi0s</h4>
+                                                <p class="text-center"></p>
+                
+                                            </div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="social-links text-center">
+                                                <a href="https://stuxnet999.github.io/" class="wordpress"><i class="fa fa-github fa-fw"></i></a>
+                                                <a href="" class="github"><i class="fa fa-google-plus fa-fw"></i></a>
+                                                <a href="" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end back panel -->
+                                </div> <!-- end card -->
+                            </div> <!-- end card-container -->
+                        </div> <!-- end col-sm-3 -->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card-container">
+                                <div class="card">
+                                    <div class="front">
+                                        <div class="cover">
+                                            <img src="img/members/rotating_card_thumb3.png"/>
+                                        </div>
+                                        <div class="user">
+                                            <img class="img-circle" src="img/members/alum/10.jpeg"/>
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h3 class="name">Abhishek JM</h3>
+                                                <p class="profession">ANDROID SECURITY</p>
+                                                <p class="text-center">Alumini</p>
+                                            </div>
+                                            <div class="footer">
+                                                <div class="rating">
+                                                    <i class="fa fa-mail-forward"></i>   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end front panel -->
+                                    <div class="back">
+                                        <div class="header">
+                                            <h5 class="motto">""</h5>
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h4 class="text-center">Former member of team bi0s</h4>
+                                                <p class="text-center"></p>
+                
+                                            </div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="social-links text-center">
+                                                <a href="https://stuxnet999.github.io/" class="wordpress"><i class="fa fa-github fa-fw"></i></a>
+                                                <a href="" class="github"><i class="fa fa-google-plus fa-fw"></i></a>
+                                                <a href="" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end back panel -->
+                                </div> <!-- end card -->
+                            </div> <!-- end card-container -->
+                        </div> <!-- end col-sm-3 -->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card-container">
+                                <div class="card">
+                                    <div class="front">
+                                        <div class="cover">
+                                            <img src="img/members/rotating_card_thumb3.png"/>
+                                        </div>
+                                        <div class="user">
+                                            <img class="img-circle" src="img/members/alum/5-m.jpeg"/>
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h3 class="name">Heeraj Nair</h3>
+                                                <p class="profession">WEB EXPLOITATION</p>
+                                                <p class="text-center">Alumini</p>
+                                            </div>
+                                            <div class="footer">
+                                                <div class="rating">
+                                                    <i class="fa fa-mail-forward"></i>   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end front panel -->
+                                    <div class="back">
+                                        <div class="header">
+                                            <h5 class="motto">""</h5>
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h4 class="text-center">Former member of team bi0s</h4>
+                                                <p class="text-center"></p>
+                
+                                            </div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="social-links text-center">
+                                                <a href="https://stuxnet999.github.io/" class="wordpress"><i class="fa fa-github fa-fw"></i></a>
+                                                <a href="" class="github"><i class="fa fa-google-plus fa-fw"></i></a>
+                                                <a href="" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end back panel -->
+                                </div> <!-- end card -->
+                            </div> <!-- end card-container -->
+                        </div> <!-- end col-sm-3 -->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card-container">
+                                <div class="card">
+                                    <div class="front">
+                                        <div class="cover">
+                                            <img src="img/members/rotating_card_thumb3.png"/>
+                                        </div>
+                                        <div class="user">
+                                            <img class="img-circle" src="img/members/alum/6.jpeg"/>
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h3 class="name">Shiva Krishna</h3>
+                                                <p class="profession">FORENSICS</p>
+                                                <p class="text-center">Alumini</p>
+                                            </div>
+                                            <div class="footer">
+                                                <div class="rating">
+                                                    <i class="fa fa-mail-forward"></i>   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end front panel -->
+                                    <div class="back">
+                                        <div class="header">
+                                            <h5 class="motto">""</h5>
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h4 class="text-center">Former member of team bi0s</h4>
+                                                <p class="text-center"></p>
+                
+                                            </div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="social-links text-center">
+                                                <a href="https://stuxnet999.github.io/" class="wordpress"><i class="fa fa-github fa-fw"></i></a>
+                                                <a href="" class="github"><i class="fa fa-google-plus fa-fw"></i></a>
+                                                <a href="" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end back panel -->
+                                </div> <!-- end card -->
+                            </div> <!-- end card-container -->
+                        </div> <!-- end col-sm-3 -->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card-container">
+                                <div class="card">
+                                    <div class="front">
+                                        <div class="cover">
+                                            <img src="img/members/rotating_card_thumb3.png"/>
+                                        </div>
+                                        <div class="user">
+                                            <img class="img-circle" src="img/members/alum/7.jpeg"/>
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h3 class="name">Rakesh Paruchuri</h3>
+                                                <p class="profession">BINARY EXPLOITATION</p>
+                                                <p class="text-center">Alumini</p>
+                                            </div>
+                                            <div class="footer">
+                                                <div class="rating">
+                                                    <i class="fa fa-mail-forward"></i>   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end front panel -->
+                                    <div class="back">
+                                        <div class="header">
+                                            <h5 class="motto">""</h5>
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h4 class="text-center">Former member of team bi0s</h4>
+                                                <p class="text-center"></p>
+                
+                                            </div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="social-links text-center">
+                                                <a href="" class="wordpress"><i class="fa fa-github fa-fw"></i></a>
+                                                <a href="" class="github"><i class="fa fa-google-plus fa-fw"></i></a>
+                                                <a href="" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end back panel -->
+                                </div> <!-- end card -->
+                            </div> <!-- end card-container -->
+                        </div> <!-- end col-sm-3 -->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card-container">
+                                <div class="card">
+                                    <div class="front">
+                                        <div class="cover">
+                                            <img src="img/members/rotating_card_thumb3.png"/>
+                                        </div>
+                                        <div class="user">
+                                            <img class="img-circle" src="img/members/alum/1.jpg"/>
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h3 class="name">Akshay Ajayan</h3>
+                                                <p class="profession">REVERSE ENGINEERING</p>
+                                                <p class="text-center">Alumini</p>
+                                            </div>
+                                            <div class="footer">
+                                                <div class="rating">
+                                                    <i class="fa fa-mail-forward"></i>   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end front panel -->
+                                    <div class="back">
+                                        <div class="header">
+                                            <h5 class="motto">""</h5>
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h4 class="text-center">Former member of team bi0s</h4>
+                                                <p class="text-center"></p>
+                
+                                            </div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="social-links text-center">
+                                                <a href="" class="wordpress"><i class="fa fa-github fa-fw"></i></a>
+                                                <a href="" class="github"><i class="fa fa-google-plus fa-fw"></i></a>
+                                                <a href="" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end back panel -->
+                                </div> <!-- end card -->
+                            </div> <!-- end card-container -->
+                        </div> <!-- end col-sm-3 -->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card-container">
+                                <div class="card">
+                                    <div class="front">
+                                        <div class="cover">
+                                            <img src="img/members/rotating_card_thumb3.png"/>
+                                        </div>
+                                        <div class="user">
+                                            <img class="img-circle" src="img/members/alum/2.jpeg"/>
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h3 class="name">Aswin Guptha</h3>
+                                                <p class="profession">WEB EXPLOITATION</p>
+                                                <p class="text-center">Alumini</p>
+                                            </div>
+                                            <div class="footer">
+                                                <div class="rating">
+                                                    <i class="fa fa-mail-forward"></i>   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end front panel -->
+                                    <div class="back">
+                                        <div class="header">
+                                            <h5 class="motto">""</h5>
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h4 class="text-center">Former member of team bi0s</h4>
+                                                <p class="text-center"></p>
+                
+                                            </div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="social-links text-center">
+                                                <a href="" class="wordpress"><i class="fa fa-github fa-fw"></i></a>
+                                                <a href="" class="github"><i class="fa fa-google-plus fa-fw"></i></a>
+                                                <a href="" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end back panel -->
+                                </div> <!-- end card -->
+                            </div> <!-- end card-container -->
+                        </div> <!-- end col-sm-3 -->
 
-        </div> <!-- end col-sm-10 -->
-    </div> <!-- end row -->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card-container">
+                                <div class="card">
+                                    <div class="front">
+                                        <div class="cover">
+                                            <img src="img/members/rotating_card_thumb3.png"/>
+                                        </div>
+                                        <div class="user">
+                                            <img class="img-circle" src="img/members/alum/9.jpeg"/>
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h3 class="name">Akshay Krishnan R</h3>
+                                                <p class="profession">BINARY EXPLOITATION</p>
+                                                <p class="text-center">Alumini</p>
+                                            </div>
+                                            <div class="footer">
+                                                <div class="rating">
+                                                    <i class="fa fa-mail-forward"></i>   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end front panel -->
+                                    <div class="back">
+                                        <div class="header">
+                                            <h5 class="motto">""</h5>
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h4 class="text-center">Former member of team bi0s</h4>
+                                                <p class="text-center"></p>
+                
+                                            </div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="social-links text-center">
+                                                <a href="" class="wordpress"><i class="fa fa-github fa-fw"></i></a>
+                                                <a href="" class="github"><i class="fa fa-google-plus fa-fw"></i></a>
+                                                <a href="" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end back panel -->
+                                </div> <!-- end card -->
+                            </div> <!-- end card-container -->
+                        </div> <!-- end col-sm-3 -->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card-container">
+                                <div class="card">
+                                    <div class="front">
+                                        <div class="cover">
+                                            <img src="img/members/rotating_card_thumb3.png"/>
+                                        </div>
+                                        <div class="user">
+                                            <img class="img-circle" src="img/members/alum/11.jpeg"/>
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h3 class="name">Akhil Mahendra</h3>
+                                                <p class="profession">WEB EXPLOITATION</p>
+                                                <p class="text-center">Alumini</p>
+                                            </div>
+                                            <div class="footer">
+                                                <div class="rating">
+                                                    <i class="fa fa-mail-forward"></i>   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end front panel -->
+                                    <div class="back">
+                                        <div class="header">
+                                            <h5 class="motto">""</h5>
+                                        </div>
+                                        <div class="content">
+                                            <div class="main">
+                                                <h4 class="text-center">Former member of team bi0s</h4>
+                                                <p class="text-center"></p>
+                
+                                            </div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="social-links text-center">
+                                                <a href="" class="wordpress"><i class="fa fa-github fa-fw"></i></a>
+                                                <a href="" class="github"><i class="fa fa-google-plus fa-fw"></i></a>
+                                                <a href="" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end back panel -->
+                                </div> <!-- end card -->
+                            </div> <!-- end card-container -->
+                        </div> <!-- end col-sm-3 -->
 
-</div>
-</div>
+                </div> <!-- end col-sm-10 -->
+            </div> <!-- end row -->
+        
+        </div>
+        </div>
+      </div>
+      
+      
+
 <!-- Footer -->
 <footer class="footer">
     <div class="footer_top">
@@ -1602,6 +2213,23 @@ Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --
 <!--/ footer end  -->
 
 <!-- JS here -->
+
+<script type="text/javascript">
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    </script>
+
 <script type="text/javascript">
     $().ready(function(){
         $('[rel="tooltip"]').tooltip();
