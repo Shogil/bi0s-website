@@ -11,6 +11,7 @@
     <!-- <link rel="manifest" href="site.webmanifest"> -->
     <!-- Place favicon.ico in the root directory -->
 
+
     <!-- CSS here -->
     <link rel="icon" href="img/favicon.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -100,6 +101,7 @@
         
         /* Style the buttons inside the tab */
         .tab button {
+          align-items: center;
           background-color: inherit;
           float: left;
           border: none;
@@ -133,7 +135,7 @@
 <body>
 
     <!-- header-start -->
-    <header>
+ <header>
         <div class="header-area ">
             <div id="sticky-header" class="main-header-area">
                 <div class="container-fluid p-0">
@@ -145,32 +147,32 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-xl-8 col-lg-8">
+                        <div class="col-xl-10 col-lg-10">
                             <div class="main-menu  d-none d-lg-block text-center">
                                 <nav>
                                     <ul id="navigation">
                                         <li><a class="active" href="index.html">home</a></li>
                                         <li><a href="events.html">Events</a></li>
-                                        <li><a href="hardware.html">Hardware</a></li>
-                                        <li><a href="pentest.html">PenTest</a></li>
+                                         <li><a href="#">Categories <i class="ti-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                <li><a href="categorysoftware.html">Software</a></li>
+                                                <li><a href="hardware.html">Hardware</a></li>
+                                                <li><a href="pentest.html">PenTest</a></li>
+                                            </ul>
+                                        </li>
                                         <li><a href="#">pages <i class="ti-angle-down"></i></a>
                                             <ul class="submenu">
                                                 
                                                 <li><a href="https://wiki.bi0s.in/">bi0s wiki</a></li>
                                                 <li><a href="https://blog.bi0s.in/">blog</a></li>
                                             </ul>
-                                        </li><li><a href="members.html">Members</a></li>
+                                        </li> <li><a href="members.html">Members</a></li>
                                         <li><a href="achievements.html">Achievements</a></li>
+                                        <li><a href="awareness">Cyber awareness</a></li>
                                     </ul>
                                 </nav>
                             </div>
                         </div>
-                        <div class="col-lg-2 d-none d-lg-block">
-                            <div class="log_chat_area d-flex align-items-end">
-                                <a href="#" data-scroll-nav="0" class="say_hi">Cyber awareness</a>
-                            </div>
-                        </div>
-
                         <div class="col-12">
                             <div class="mobile_menu d-block d-lg-none"></div>
                         </div>
@@ -182,11 +184,12 @@
     <!-- header-end -->
 
     <div class="tab">
-
+        <center>
         <button class="tablinks" onclick="openCity(event, 'Team')">Current Team</button>
         <button class="tablinks" onclick="openCity(event, 'Alum')">Alumini</button>
+    </center>
       </div>
-      
+     
       <div id="Team" class="tabcontent">
         <div class="service_area">
             <div class="container">
@@ -578,7 +581,7 @@
                             <div class="content">
                                 <div class="main">
                                     <h3 class="name">Kartheek Lade</h3>
-                                    <p class="profession">Product Manager</p>
+                                    <p class="profession">Hardware</p>
         
                                     <p class="text-center">"Third-Year"</p>
                                 </div>
@@ -1085,7 +1088,7 @@
                                     <div class="content">
                                         <div class="main">
                                             <h3 class="name">Nikhil Nair </h3>
-                                            <p class="profession">Wwb Exploitation</p>
+                                            <p class="profession">Web Exploitation</p>
                                             <p class="text-center">Second-Year</p>
                                         </div>
                                         <div class="footer">
@@ -1318,7 +1321,7 @@
                                     <div class="content">
                                         <div class="main">
                                             <h3 class="name">Jaswanth Bommidi</h3>
-                                            <p class="profession">FORENSICS</p>
+                                            <p class="profession">Forensics</p>
             
                                             <p class="text-center">"Second-Year"</p>
                                         </div>
