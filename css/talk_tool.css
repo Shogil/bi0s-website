@@ -7,6 +7,50 @@ body {
 body {
   background: #fff;
 }
+/*../tools_talks_ws.html*/
+.tools{
+  height: 18rem;
+  margin: 3.5rem;
+  border-radius: 1rem;
+  border: 0.25rem solid #525252;
+}
+.tools_container{
+  width: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.content_container{
+  height: 100%;
+}
+.para_container{
+  height: 100%;
+  display: flex;
+  align-items:center;
+  padding: 1em;
+  background: white;
+}
+.authors{
+  margin: 1.5rem;
+  position: absolute;
+  right: 0;
+  bottom: -4rem;
+}
+.author_img{
+  margin: 1rem;
+  border: 0.25rem solid #525252;
+  border-radius: 50%;
+  max-width: 13%;
+}
+.tools_head{
+  height: 100%;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  color:blue;
+}
+/*../tools_talks_ws.html end*/
 .js-transitions-disabled * {
   -webkit-transition: none !important;
   transition: none !important;
