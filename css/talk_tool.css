@@ -7,9 +7,10 @@ body {
 body {
   background: #fff;
 }
+
 /*../tools_talks_ws.html*/
 .tools{
-  height: 18rem;
+  height: 25rem;
   margin: 3.5rem;
   border-radius: 1rem;
   border: 0.25rem solid #525252;
@@ -31,38 +32,59 @@ body {
   padding: 1em;
   background: white;
 }
+.para_container > ul > li > p{
+  font-size: 1.2rem;
+}
 .authors{
   margin: 1.5rem;
   position: absolute;
   right: 0;
-  bottom: -4rem;
+  bottom: -6rem;
 }
 .author_img{
   margin: 1rem;
   border: 0.25rem solid #525252;
   border-radius: 50%;
-  max-width: 13%;
+  max-width: 18%;
+}
+.author_img2{
+  margin: 1rem;
+  border: 0.25rem solid #525252;
+  border-radius: 50%;
+  max-width: 6.5rem;
 }
 .tools_head{
   height: 100%;
   display: flex;
   align-items:center;
   justify-content: center;
-  color:blue;
+}
+.carousel{
+  margin-top: 50px;
+  background-color: black;
+}
+.carousel-inner{
+  height: 300px;
+}
+.carousel-item{
+  height: 100%;
+}
+.carousel-caption{
+  padding-bottom: ;
+  height: 100%;
+  color: #fff;
+}
+.carousel-caption > p{
+  padding-top: calc(10% - 80px);
+  text-align: center;
+  font-size: 2rem;
+  line-height: normal;
 }
 /*../tools_talks_ws.html end*/
+
 .js-transitions-disabled * {
   -webkit-transition: none !important;
   transition: none !important;
-}
-.carousel {
-  position: relative;
-  height: 100%;
-  overflow: hidden;
-  -webkit-perspective: 50vw;
-          perspective: 50vw;
-  -webkit-perspective-origin: 50% 50%;
-          perspective-origin: 50% 50%;
 }
 .carousel__control {
   position: absolute;

@@ -10,6 +10,21 @@ const SPIN_BACKWARD_CLASS = 'js-spin-bwd'
 const DISABLE_TRANSITIONS_CLASS = 'js-transitions-disabled'
 const SPIN_DUR = 1000
 
+$(window).on('resize', function() {
+    if($(window).width() > 1600) {
+        $('.tools_item').addClass('col-xl-6');
+    }else{
+        $('.tools_item').removeClass('col-xl-6');
+    }
+    if($(window).width() > 1100) {
+        $('.img-fluid').addClass('author_img2');
+        $('.img-fluid').removeClass('author_img');        
+    }else{
+        $('.img-fluid').addClass('author_img');
+        $('.img-fluid').removeClass('author_img2');
+    }
+})
+
 const appendControls = () => {
   for (let i = 0; i < limit; i++) {
     $('.carousel__control').append(`<a href="#" data-index="${i}"></a>`)
